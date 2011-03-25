@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class PostsController</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class PostsController</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+		<p class="notes">
+			Located in <a class="field" href="_controllers---posts_controller.php.html">/controllers/posts_controller.php</a> (line <span class="field">3</span>)
+		</p>
+		
+				
+		<pre>Controller
+   |
+   --<a href="../default/AppController.html">AppController</a>
+      |
+      --PostsController</pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../default/BlogController.html">BlogController</a></td>
+					<td>
+											
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../default/DicasController.html">DicasController</a></td>
+					<td>
+											
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../default/LivrosController.html">LivrosController</a></td>
+					<td>
+											
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../default/NoticiasController.html">NoticiasController</a></td>
+					<td>
+											
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$components" title="details" class="var-name">$components</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$helpers" title="details" class="var-name">$helpers</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$paginate" title="details" class="var-name">$paginate</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$uses" title="details" class="var-name">$uses</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																				
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#admin_add" title="details" class="method-name">admin_add</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$post_id</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#admin_del" title="details" class="method-name">admin_del</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$post_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#admin_edit" title="details" class="method-name">admin_edit</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$post_id</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#admin_index" title="details" class="method-name">admin_index</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#beforeRender" title="details" class="method-name">beforeRender</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#busca" title="details" class="method-name">busca</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#favoritar" title="details" class="method-name">favoritar</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$idpost</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$gostar</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getUniqueUrl" title="details" class="method-name">getUniqueUrl</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$string</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$field</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#index" title="details" class="method-name">index</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#rss" title="details" class="method-name">rss</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$tipo</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$categoria</span> = <span class="var-default">null</span>])
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$components" id="$components"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$components</span>
+			 = <span class="var-default">array('RequestHandler')</span>			(line <span class="line-number">5</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../default/AppController.html#var$components">AppController::$components</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$helpers" id="$helpers"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$helpers</span>
+			 = <span class="var-default">array('Html', 'Javascript', 'Number', 'Fck')</span>			(line <span class="line-number">7</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../default/AppController.html#var$helpers">AppController::$helpers</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$paginate" id="$paginate"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$paginate</span>
+			 = <span class="var-default">array(<br />        'Post' =&gt; array(<br />            'limit' =&gt; 20<br />        ))</span>			(line <span class="line-number">8</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$uses" id="$uses"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$uses</span>
+			 = <span class="var-default">array('Post', 'Categoria', 'Favorito')</span>			(line <span class="line-number">6</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../default/AppController.html#var$uses">AppController::$uses</a></dt>
+					</dl>
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../default/BlogController.html#var$uses">BlogController::$uses</a>
+							</li>
+					<li>
+				<a href="../default/DicasController.html#var$uses">DicasController::$uses</a>
+							</li>
+					<li>
+				<a href="../default/LivrosController.html#var$uses">LivrosController::$uses</a>
+							</li>
+					<li>
+				<a href="../default/NoticiasController.html#var$uses">NoticiasController::$uses</a>
+							</li>
+				</ul>
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../default/AppController.html">AppController</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../default/AppController.html#var$allows">AppController::$allows</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../default/AppController.html#var$keyword">AppController::$keyword</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../default/AppController.html#var$LoginUsuario">AppController::$LoginUsuario</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../default/AppController.html#var$meta">AppController::$meta</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../default/AppController.html#var$pageTitle">AppController::$pageTitle</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../default/AppController.html#var$scripts_layout">AppController::$scripts_layout</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodadmin_add" id="admin_add"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">admin_add</span> (line <span class="line-number">109</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			admin_add
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$post_id</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$post_id</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../default/BlogController.html#methodadmin_add">BlogController::admin_add()</a>
+							</li>
+					<li>
+				<a href="../default/DicasController.html#methodadmin_add">DicasController::admin_add()</a>
+							</li>
+					<li>
+				<a href="../default/LivrosController.html#methodadmin_add">LivrosController::admin_add()</a>
+							</li>
+					<li>
+				<a href="../default/NoticiasController.html#methodadmin_add">NoticiasController::admin_add()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodadmin_del" id="admin_del"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">admin_del</span> (line <span class="line-number">133</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			admin_del
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$post_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$post_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadmin_edit" id="admin_edit"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">admin_edit</span> (line <span class="line-number">104</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			admin_edit
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$post_id</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$post_id</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../default/BlogController.html#methodadmin_edit">BlogController::admin_edit()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodadmin_index" id="admin_index"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">admin_index</span> (line <span class="line-number">98</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			admin_index
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../default/BlogController.html#methodadmin_index">BlogController::admin_index()</a>
+							</li>
+					<li>
+				<a href="../default/DicasController.html#methodadmin_index">DicasController::admin_index()</a>
+							</li>
+					<li>
+				<a href="../default/LivrosController.html#methodadmin_index">LivrosController::admin_index()</a>
+							</li>
+					<li>
+				<a href="../default/NoticiasController.html#methodadmin_index">NoticiasController::admin_index()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodbeforeRender" id="beforeRender"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">beforeRender</span> (line <span class="line-number">15</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			beforeRender
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../default/AppController.html#methodbeforeRender">AppController::beforeRender()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbusca" id="busca"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">busca</span> (line <span class="line-number">72</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			busca
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodfavoritar" id="favoritar"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">favoritar</span> (line <span class="line-number">44</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			favoritar
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$idpost</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$gostar</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$idpost</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$gostar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetUniqueUrl" id="getUniqueUrl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUniqueUrl</span> (line <span class="line-number">144</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getUniqueUrl
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$string</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$field</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$string</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$field</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodindex" id="index"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">index</span> (line <span class="line-number">31</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			index
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../default/BlogController.html#methodindex">BlogController::index()</a>
+							</li>
+					<li>
+				<a href="../default/DicasController.html#methodindex">DicasController::index()</a>
+							</li>
+					<li>
+				<a href="../default/LivrosController.html#methodindex">LivrosController::index()</a>
+							</li>
+					<li>
+				<a href="../default/NoticiasController.html#methodindex">NoticiasController::index()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodrss" id="rss"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">rss</span> (line <span class="line-number">83</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			rss
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$tipo</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$categoria</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$tipo</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$categoria</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../default/AppController.html">AppController</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../default/AppController.html#methodbeforeFilter">AppController::beforeFilter()</a></span><br>
+													<span class="method-name"><a href="../default/AppController.html#methodbeforeRender">AppController::beforeRender()</a></span><br>
+													<span class="method-name"><a href="../default/AppController.html#method_loadEnquete">AppController::_loadEnquete()</a></span><br>
+													<span class="method-name"><a href="../default/AppController.html#method_sendmail">AppController::_sendmail()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 18 Mar 2011 01:05:52 -0300 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

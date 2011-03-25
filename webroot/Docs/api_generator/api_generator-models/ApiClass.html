@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class ApiClass</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class ApiClass</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Api Class Model</p>
+<p class="description"><p>Used for fetching information from the class index.</p><p>PHP 5.2+</p><p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)  Copyright 2008-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)</p><p>Licensed under The MIT License  Redistributions of files must retain the above copyright notice.</p></p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright 2008-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)</li>
+				<li><span class="field">link:</span> <a href="http://cakephp.org">http://cakephp.org</a></li>
+				<li><span class="field">since:</span> ApiGenerator 0.1</li>
+				<li><span class="field">license:</span> MIT</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_plugins---api_generator---models---api_class.php.html">/plugins/api_generator/models/api_class.php</a> (line <span class="field">22</span>)
+		</p>
+		
+				
+		<pre>AppModel
+   |
+   --<a href="../../api_generator/ApiGeneratorAppModel.html">ApiGeneratorAppModel</a>
+      |
+      --ApiClass</pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#CONCRETE_CLASS" title="details" class="const-name">CONCRETE_CLASS</a> = 					<span class="var-type"> 2</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#PSEUDO_CLASS" title="details" class="const-name">PSEUDO_CLASS</a> = 					<span class="var-type"> 1</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$belongsTo" title="details" class="var-name">$belongsTo</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$config" title="details" class="var-name">$config</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$name" title="details" class="var-name">$name</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$validate" title="details" class="var-name">$validate</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																				
+												<div class="method-definition">
+											<span class="method-result">ApiClass</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ds</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#analyzeCoverage" title="details" class="method-name">analyzeCoverage</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$apiClass</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#clearIndex" title="details" class="method-name">clearIndex</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getClassIndex" title="details" class="method-name">getClassIndex</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$includePseudoClass</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#saveClassDocs" title="details" class="method-name">saveClassDocs</a>
+											(<span class="var-type"><a href="../../api_generator/api_generator-tests-models/ClassDocumentor.html">ClassDocumentor</a></span>&nbsp;<span class="var-name">$classDoc</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#savePseudoClassDocs" title="details" class="method-name">savePseudoClassDocs</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$functions</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#search" title="details" class="method-name">search</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$terms</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#_calculateRelevance" title="details" class="method-name">_calculateRelevance</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$subjects</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$terms</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$spread</span> = <span class="var-default">array('high' =&gt; 4, 'low' =&gt; 2)</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_generateIndex" title="details" class="method-name">_generateIndex</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$classDoc</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$what</span> = <span class="var-default">'methods'</span>], <span class="var-type">mixed</span>&nbsp;<span class="var-name">$classDoc</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_initConfig" title="details" class="method-name">_initConfig</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#_queryFiles" title="details" class="method-name">_queryFiles</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$results</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$terms</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_unsetUnmatching" title="details" class="method-name">_unsetUnmatching</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$obj</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$terms</span> = <span class="var-default">array()</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span> = <span class="var-default">'properties'</span>], <span class="var-type">mixed</span>&nbsp;<span class="var-name">$obj</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$belongsTo" id="$belongsTo"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$belongsTo</span>
+			 = <span class="var-default">array(<br />		'ApiPackage' =&gt; array(<br />			'className' =&gt; 'ApiGenerator.ApiPackage',<br />			'foreign_key' =&gt; 'api_class_id',<br />		))</span>			(line <span class="line-number">53</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">belongsTo assoc</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$config" id="$config"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$config</span>
+			 = <span class="var-default">array(<br />		'coverageRules' =&gt; null<br />	)</span>			(line <span class="line-number">64</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Configuration values for ApiClass</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$name" id="$name"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$name</span>
+			 = <span class="var-default"> 'ApiClass'</span>			(line <span class="line-number">28</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Name</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$validate" id="$validate"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$validate</span>
+			 = <span class="var-default">array(<br />		'name' =&gt; array(<br />			'empty' =&gt; array(<br />				'rule' =&gt; 'notEmpty',<br />				'message' =&gt; 'Name must not be empty',<br />			)),'flags'=&gt;array('number'=&gt;array('rule'=&gt;'numeric','message'=&gt;'Flags are numeric only',)))</span>			(line <span class="line-number">34</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validation rules</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																			<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">87</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor, make instance of ApiConfig and initialize configration data.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">ApiClass</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ds</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ds</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodanalyzeCoverage" id="analyzeCoverage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">analyzeCoverage</span> (line <span class="line-number">335</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Analyzes Documentation coverage.</p>
+<p class="description"><p>Use this method if you are unsure of the contents of an apiClass record, or  don't already have the reflection objects.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array of warnings / info / % complete</li>
+				<li><span class="field">throws:</span> Exception  Throws exception if you are looking at a non-concrete class, of if there   was an error with analyzation.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			analyzeCoverage
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$apiClass</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$apiClass</span><span class="var-description">: An ApiClass record to be analyzed.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodclearIndex" id="clearIndex"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">clearIndex</span> (line <span class="line-number">108</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clears (truncates) the class index.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			clearIndex
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetClassIndex" id="getClassIndex"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getClassIndex</span> (line <span class="line-number">165</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the class index listing</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getClassIndex
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$includePseudoClass</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$includePseudoClass</span><span class="var-description">: Whether you want to include 'pseudo' classes (no actual class)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsaveClassDocs" id="saveClassDocs"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">saveClassDocs</span> (line <span class="line-number">118</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">save the entry in the index for a ClassDocumentor object</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			saveClassDocs
+		</span>
+					(<span class="var-type"><a href="../../api_generator/api_generator-tests-models/ClassDocumentor.html">ClassDocumentor</a></span>&nbsp;<span class="var-name">$classDoc</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$classDoc</span><span class="var-description">: Instance of ClassDocumentor to add to database.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsavePseudoClassDocs" id="savePseudoClassDocs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">savePseudoClassDocs</span> (line <span class="line-number">140</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Save a set of global functions to the ApiClass index.</p>
+<p class="description"><p>Will make one record with a 'class name' derived from the filename.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			savePseudoClassDocs
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$functions</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$functions</span><span class="var-description">: Array of FunctionDocumentor objects to index.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span><span class="var-description">: Name of file these things are found in.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsearch" id="search"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">search</span> (line <span class="line-number">204</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">search method</p>
+<p class="description"><p>Find matching records for the given term or terms  Find results ordered by those matching in order: class names, method names, properties</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of matching ApiFile objects</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			search
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$terms</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$terms</span><span class="var-description">: array of terms or search term</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_calculateRelevance" id="_calculateRelevance"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_calculateRelevance</span> (line <span class="line-number">284</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">calculate the relevance of a match.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			_calculateRelevance
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$subjects</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$terms</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$spread</span> = <span class="var-default">array('high' =&gt; 4, 'low' =&gt; 2)</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$subjects</span><span class="var-description">: Things to calculate relevance for.</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$terms</span><span class="var-description">: Terms that were searched for.</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$spread</span><span class="var-description">: array of 'high' and 'low' relevance amounts</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_generateIndex" id="_generateIndex"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_generateIndex</span> (line <span class="line-number">184</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generate a search index of methods or properties for the ClassDocumentor Object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_generateIndex
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$classDoc</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$what</span> = <span class="var-default">'methods'</span>], <span class="var-type">mixed</span>&nbsp;<span class="var-name">$classDoc</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$classDoc</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$what</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$classDoc</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_initConfig" id="_initConfig"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_initConfig</span> (line <span class="line-number">97</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Pull out the relevant information from the ApiConfig</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_initConfig
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_queryFiles" id="_queryFiles"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_queryFiles</span> (line <span class="line-number">233</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">filterSearchResults method</p>
+<p class="description"><p>Purge results that don't match the search terms</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> filtered results</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			_queryFiles
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$results</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$terms</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$results</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$terms</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_unsetUnmatching" id="_unsetUnmatching"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_unsetUnmatching</span> (line <span class="line-number">307</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">unsetUnmatching method</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_unsetUnmatching
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$obj</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$terms</span> = <span class="var-default">array()</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span> = <span class="var-default">'properties'</span>], <span class="var-type">mixed</span>&nbsp;<span class="var-name">$obj</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$obj</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$terms</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$field</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$obj</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../api_generator/ApiGeneratorAppModel.html">ApiGeneratorAppModel</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../api_generator/ApiGeneratorAppModel.html#methodslugPath">ApiGeneratorAppModel::slugPath()</a></span><br>
+													<span class="method-name"><a href="../../api_generator/ApiGeneratorAppModel.html#method_makeSlug">ApiGeneratorAppModel::_makeSlug()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constCONCRETE_CLASS" id="CONCRETE_CLASS"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">CONCRETE_CLASS</span>
+			 = <span class="const-default"> 2</span>
+			(line <span class="line-number">79</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Concrete class bitmask;</p>
+	
+	
+</div>
+<a name="constPSEUDO_CLASS" id="PSEUDO_CLASS"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">PSEUDO_CLASS</span>
+			 = <span class="const-default"> 1</span>
+			(line <span class="line-number">73</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag bitmask for Pseudo classes (files with global functions)  get a pseudo class assigned to them</p>
+	
+	
+</div>
+						
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 18 Mar 2011 01:05:21 -0300 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

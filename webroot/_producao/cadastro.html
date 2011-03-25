@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="pt-br" lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Telefônica - Negócios</title>
+		<!--meta-tag-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="pt-br" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="" />
+		<meta name="copyright" content="Copyright © 2010 - Telefonica - Todos direitos reservados" />
+		<meta name="distribution" content="Global" />
+		<meta name="robots" content="index,follow" />
+		<!--css-->
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="screen, print" />
+		<!--jquery-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<!--thickbox-->
+		<script type="text/javascript" src="thickbox/thickbox-compressed.js"></script>
+		<link href="thickbox/thickbox.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// CAMPOS CPF-CNPJ
+				$('.cpf-cnpj').hide();
+				$('.cpf').click(function(){
+					$('.cpf-cnpj').show().attr('name','cpf');
+					$('.cpf-cnpj').val('CPF');
+					return true;
+				});
+				$('.cnpj').click(function(){
+					$('.cpf-cnpj').show().attr('name','cnpj');
+					$('.cpf-cnpj').val('CNPJ');
+					return true;
+				});
+			});
+		</script>
+	</head>
+	<body class="login-off">
+		<!--GERAL-->
+		<div id="wrap">
+			<!--CABECALHO-->
+			<div id="header">
+				<!--TELEFONICA-->
+				<h1 class="telefonica"><a href="#" title="Telefônica" class="graphic">Telefônica</a></h1>
+				<h2 class="telefonica-negocios graphic">Telefônica Negócios</a></h2>
+			</div><!--/CABECALHO-->
+			<!--LOGIN-OFF-->
+			<div id="login-off">
+				<!--CADASTRE-SE-->
+				<div class="cadastre-se">
+					<p>Aqui, você tem acesso a um mundo de oportunidades e vantagens exclusivas.</p>
+					<span class="link-button"><a href="#" title="Cadastre-se já!">Cadastre-se já!</a></span>
+				</div><!--/CADASTRE-SE-->
+				<!--LOGIN-->
+				<form id="login" method="post" action="#">
+					<fieldset>
+						<label for="email">E-mail
+							<input type="text" name="login-email" />
+						</label>
+						<label for="senha">Senha
+							<input type="password" name="login-senha" />
+							<span><a href="esqueceu-senha.html?height=70&width=460" class="thickbox" title="Digite seu e-mail, para que possamos lhe enviar os seus dados de acesso a sua página exclusiva do Plataforma Digital">Esqueceu sua senha?</a></span>
+						</label>
+						<span class="link-button"><input type="submit" name="login-entrar" value="Entrar" /></span>
+					</fieldset>
+				</form><!--LOGIN-->
+			</div><!--/LOGIN-OFF-->
+			<!--CONTEUDO-->
+			<div id="content-all">
+				<a href="#" title="&laquo; voltar" class="right">&laquo; voltar</a>
+				<h4 class="main-title title-cadastro graphic">Cadastro</h4>
+				<!--FALE-CONOSCO-->
+				<form id="cadastro" action="#" method="post">
+					<fieldset>
+						<legend>Dados da Empresa:</legend>
+						<label for="telefone"><span class="campo-txt">Telefone</span>
+							<input class="ddd" type="text" name="ddd" value="DDD" />
+							<input class="tel" type="text" name="telefone" value="Número do telefone" />
+						</label>
+						<label for="documentacao"><span class="campo-txt">Documento (CPF/CNPJ)</span>
+							<span class="documentacao"><input class="doc cpf" type="radio" name="doc" />CPF</span>
+							<span class="documentacao"><input class="doc cnpj" type="radio" name="doc" />CNPJ</span>
+							<span class="documento"><input class="cpf-cnpj" type="text" /></span>
+						</label>
+					</fieldset>
+					<span class="link-button"><input class="thickbox" alt="cadastro-enviar.html?height=70&width=460" title="Obrigado por se cadastrar no Plataforma Digital. Digite seu e-mail no campo abaixo para receber a sua confirmação de cadastro." type="submit" name="acessar-tel" value="Acessar Dados deste Telefone" /></span>
+				</form>
+				<p class="falar-telefonica">Para falar com a Telefônica utilize os telefones: São Paulo (011)  0000-0000 | Outras localidades</p>
+			</div><!--/CONTEUDO-->
+		</div><!--/GERAL-->
+		<!--RODAPE-->
+		<div id="footer">
+			<ul class="footer-content">
+				<li><a href="#" title="Fale Conosco">Fale Conosco</a><span>|</span></li>
+				<li><a href="#" title="Termos de uso">Termos de uso</a><span>|</span></li>
+				<li><a href="#" title="Sobre o Portal">Sobre o Portal</a><span>|</span></li>
+				<li><a href="#" title="Telefônica Negócios">Telefônica Negócios</a></li>
+			</ul>
+		</div><!--/RODAPE-->
+	</body>
+</html>

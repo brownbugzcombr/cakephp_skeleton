@@ -1,0 +1,1 @@
+<div id="bordaBannerFlash">	<div id="bannerFlash">		<img src="/img/side-bar-180x420.gif" alt="" height="432" width="192" />	</div></div>

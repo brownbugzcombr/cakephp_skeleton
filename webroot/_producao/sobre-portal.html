@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="pt-br" lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Telefônica - Negócios</title>
+		<!--meta-tag-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="pt-br" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="" />
+		<meta name="copyright" content="Copyright © 2010 - Telefonica - Todos direitos reservados" />
+		<meta name="distribution" content="Global" />
+		<meta name="robots" content="index,follow" />
+		<!--css-->
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="screen, print" />
+		<!--jquery-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<!--menu-acordeon-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// PERGUNTAS-FREQUENTES
+				$('.perguntas-frequentes ul').find("p:first").show();
+				$('.perguntas-frequentes ul li:first').addClass("aberta");
+				$('.perguntas-frequentes h2').click(function() {
+					$(this).next('p').slideToggle('fast');
+					$(this).parent().toggleClass("aberta");
+					 return false;
+				});
+			});
+		</script>
+		<!--thickbox-->
+		<script type="text/javascript" src="thickbox/thickbox-compressed.js"></script>
+		<link href="thickbox/thickbox.css" rel="stylesheet" type="text/css" media="all" />
+	</head>
+	<body class="login-off">
+		<!--GERAL-->
+		<div id="wrap">
+			<!--CABECALHO-->
+			<div id="header">
+				<!--TELEFONICA-->
+				<h1 class="telefonica"><a href="#" title="Telefônica" class="graphic">Telefônica</a></h1>
+				<h2 class="telefonica-negocios graphic">Telefônica Negócios</a></h2>
+			</div><!--/CABECALHO-->
+			<!--LOGIN-OFF-->
+			<div id="login-off">
+				<!--CADASTRE-SE-->
+				<div class="cadastre-se">
+					<p>Aqui, você tem acesso a um mundo de oportunidades e vantagens exclusivas.</p>
+					<span class="link-button"><a href="#" title="Cadastre-se já!">Cadastre-se já!</a></span>
+				</div><!--/CADASTRE-SE-->
+				<!--LOGIN-->
+				<form id="login" method="post" action="#">
+					<fieldset>
+						<label for="email">E-mail
+							<input type="text" name="login-email" />
+						</label>
+						<label for="senha">Senha
+							<input type="password" name="login-senha" />
+							<span><a href="esqueceu-senha.html?height=70&width=460" class="thickbox" title="Digite seu e-mail, para que possamos lhe enviar os seus dados de acesso a sua página exclusiva do Plataforma Digital">Esqueceu sua senha?</a></span>
+						</label>
+						<span class="link-button"><input type="submit" name="login-entrar" value="Entrar" /></span>
+					</fieldset>
+				</form><!--LOGIN-->
+			</div><!--/LOGIN-OFF-->
+			<!--CONTEUDO-->
+			<div id="content-all">
+				<a href="#" title="&laquo; voltar" class="right">&laquo; voltar</a>
+				<h4 class="main-title title-sobre-plataforma graphic">Sobre a Plataforma Digital</h4>
+				<!--SOBRE-PORTAL-->
+				<div class="sobre-portal">
+					<img src="img-interface/sobre-portal.jpg" height="217" width="296" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere nisl vitae tellus pretium in pellentesque metus condimentum. Mauris consectetur nulla ac purus congue elementum. Curabitur in justo eget sapien ornare iaculis. Nam eu cursus ante. Curabitur iaculis lorem vitae felis pretium at dignissim mi mollis. Ut malesuada, lorem quis tempor bibendum, lacus justo accumsan ipsum, non condimentum lorem tortor sed mauris. Vestibulum vitae nibh lacus, at iaculis orci. Phasellus massa est, consectetur a condimentum sed, luctus tempus velit. Proin semper magna at diam egestas hendrerit. Nunc purus ligula, suscipit id euismod et, ultricies vel nisi. Fusce a enim eget sem molestie cursus.</p>
+					<p>Mauris eros ligula, varius non bibendum id, dictum eget risus. Aenean tincidunt eleifend lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque tempus laoreet metus, scelerisque elementum felis iaculis vitae. Curabitur enim lectus, convallis eu elementum eu, tristique eget dui.</p>
+					<p>In interdum quam vitae sapien ornare vitae laoreet orci ornare. Duis gravida feugiat diam, in ornare metus sagittis ut. Pellentesque imperdiet viverra purus eget tincidunt. Duis ut lacus eu nisi euismod accumsan. Fusce fringilla consectetur adipiscing. Sed a tortor nec orci elementum feugiat a sed nunc. Ut vel eros est. Vestibulum pulvinar tincidunt libero.</p>
+					<h3 class="beneficios">Quer usufruir de todos os benefícios?<br />Cadastre-se agora na Plataforma digital e fique por dentro de tudo no meio corporativo.</h3>
+					<span class="link-button"><a href="#" title="Cadastre-se gratuitamente!">Cadastre-se gratuitamente!</a></span>
+				</div><!--/SOBRE-PORTAL-->
+				<!--PERGUNTAS-FREQUENTES-->
+				<div class="perguntas-frequentes">
+					<h4 class="main-title title-perguntas graphic">Sobre a Plataforma Digital</h4>
+					<ul>
+						<li>
+							<h2>1. O que é a Plataforma Digital?</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere nisl vitae tellus pretium in pellentesque metus condimentum. Mauris consectetur nulla ac purus congue elementum. Curabitur in justo eget sapien ornare iaculis. Nam eu cursus ante. Curabitur iaculis lorem vitae felis pretium at dignissim mi mollis. Ut malesuada, lorem quis tempor bibendum, lacus justo ac cumsan ipsum, non condimentum lorem tortor sed mauris.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere nisl vitae tellus pretium in pellentesque metus condimentum.</p>
+						</li>
+						<li>
+							<h2>2. Como funciona este serviço?</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere nisl vitae tellus pretium in pellentesque metus condimentum. Mauris consectetur nulla ac purus congue elementum.</p>
+						</li>
+						<li>
+							<h2>3. Quais são as cidades em que o serviço está disponível?</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere nisl vitae tellus pretium in pellentesque metus condimentum.</p>
+						</li>
+						<li>
+							<h2>4. Como faço para cadastrar minha empresa no Plataforma Digital?</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere nisl vitae tellus pretium in pellentesque metus condimentum. Mauris consectetur nulla ac purus congue elementum.</p>
+						</li>
+					</ul>
+				</div><!--/PERGUNTAS-FREQUENTES-->
+			</div><!--/CONTEUDO-->
+		</div><!--/GERAL-->
+		<!--RODAPE-->
+		<div id="footer">
+			<ul class="footer-content">
+				<li><a href="#" title="Fale Conosco">Fale Conosco</a><span>|</span></li>
+				<li><a href="#" title="Termos de uso">Termos de uso</a><span>|</span></li>
+				<li><a href="#" title="Sobre o Portal">Sobre o Portal</a><span>|</span></li>
+				<li><a href="#" title="Telefônica Negócios">Telefônica Negócios</a></li>
+			</ul>
+		</div><!--/RODAPE-->
+	</body>
+</html>

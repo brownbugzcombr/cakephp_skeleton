@@ -1,0 +1,295 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2011-03-11 04:32-0300\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: \plugins\api_generator\controllers\api_classes_controller.php:104
+msgid "No class name was given"
+msgstr ""
+
+#: \plugins\api_generator\controllers\api_classes_controller.php:109;136
+msgid "No class exists in the index with that name"
+msgstr ""
+
+#: \plugins\api_generator\controllers\api_classes_controller.php:124
+msgid "Oops, seems we couldn't get the documentation for that class."
+msgstr ""
+
+#: \plugins\api_generator\controllers\api_classes_controller.php:181;207
+msgid "No class exists with that name"
+msgstr ""
+
+#: \plugins\api_generator\controllers\api_classes_controller.php:200
+msgid "Invalid request."
+msgstr ""
+
+#: \plugins\api_generator\controllers\api_files_controller.php:91
+msgid "No file exists with that name"
+msgstr ""
+
+#: \plugins\api_generator\controllers\api_packages_controller.php:55
+msgid "No package name was given"
+msgstr ""
+
+#: \plugins\api_generator\controllers\api_packages_controller.php:60
+msgid "No package exists in the index with that name"
+msgstr ""
+
+#: \plugins\api_generator\models\api_class.php:350
+msgid "%s is a pseudo class, and cannot have coverage generated"
+msgstr ""
+
+#: \plugins\api_generator\vendors\shells\api_index.php:58
+msgid "Your database configuration was not found. Take a moment to create one."
+msgstr ""
+
+#: \plugins\api_generator\vendors\shells\api_index.php:106
+msgid "Routes file updated"
+msgstr ""
+
+#: \plugins\api_generator\vendors\shells\api_index.php:109
+msgid "Routes file NOT updated"
+msgstr ""
+
+#: \plugins\api_generator\vendors\shells\api_index.php:383
+msgid "You have no users :("
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\admin_docs_coverage.ctp:1
+msgid "go back"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\admin_docs_coverage.ctp:2
+msgid "Docs Coverage for "
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\admin_docs_coverage.ctp:8
+msgid "Docs analysis:"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\admin_docs_coverage.ctp:10
+msgid "Class info:"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\admin_index.ctp:2
+msgid "Admin Class Index"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\admin_index.ctp:6
+msgid "Classname"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\admin_index.ctp:7
+msgid "Coverage"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\admin_index.ctp:8
+msgid "Actions"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\admin_index.ctp:18
+msgid "Loading.."
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\admin_index.ctp:23
+msgid "View Coverage"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\classes.ctp:6
+msgid "Api Class index"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\classes.ctp:54
+msgid "Index"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\classes.ctp:76
+msgid "(cont.)"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\no_class.ctp:7
+msgid "No classes were found in the requested file"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\no_class.ctp:9
+#: \plugins\api_generator\views\api_files\source.ctp:14
+#: \plugins\api_generator\views\elements\sidebar\file_sidebar.ctp:10
+msgid "Up one folder"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\search.ctp:8
+msgid "Search Results for \"%s\""
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\search.ctp:10
+msgid "Your search returned no results"
+msgstr ""
+
+#: \plugins\api_generator\views\api_classes\json\view_class.ctp:75
+#: \plugins\api_generator\views\elements\function_summary.ctp:29
+#: \plugins\api_generator\views\elements\method_detail.ctp:36
+msgid "(no default)"
+msgstr ""
+
+#: \plugins\api_generator\views\api_files\files.ctp:6
+msgid "All Files"
+msgstr ""
+
+#: \plugins\api_generator\views\api_files\files.ctp:8
+msgid "All files"
+msgstr ""
+
+#: \plugins\api_generator\views\api_files\files.ctp:19
+#: \plugins\api_generator\views\api_files\source.ctp:29
+#: \plugins\api_generator\views\elements\sidebar\file_sidebar.ctp:28
+msgid "No files"
+msgstr ""
+
+#: \plugins\api_generator\views\api_packages\index.ctp:1
+#: \plugins\api_generator\views\elements\api_menu.ctp:25
+msgid "Packages"
+msgstr ""
+
+#: \plugins\api_generator\views\api_packages\view.ctp:5
+msgid "%s Package"
+msgstr ""
+
+#: \plugins\api_generator\views\api_packages\view.ctp:8
+msgid "Parent Package"
+msgstr ""
+
+#: \plugins\api_generator\views\api_packages\view.ctp:15
+msgid "Child Packages"
+msgstr ""
+
+#: \plugins\api_generator\views\api_packages\view.ctp:23
+msgid "Classes in %s"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\api_menu.ctp:4
+msgid "Classes"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\api_menu.ctp:11
+msgid "Source"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\api_menu.ctp:18
+msgid "Files"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\class_info.ctp:10
+msgid "%s Class Info:"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\class_info.ctp:13
+msgid "Class Declaration:"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\class_info.ctp:16
+msgid "File name:"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\class_info.ctp:19
+msgid "Description:"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\class_info.ctp:23
+msgid "Class Inheritance"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\class_info.ctp:28
+msgid "Interfaces Implemented"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\element_toc.ctp:10
+msgid "Defined Classes"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\element_toc.ctp:24
+msgid "Declared Functions"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\function_summary.ctp:11
+#: \plugins\api_generator\views\elements\method_detail.ctp:18
+msgid "top"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\function_summary.ctp:18
+#: \plugins\api_generator\views\elements\method_detail.ctp:25
+msgid "Parameters:"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\function_summary.ctp:42
+#: \plugins\api_generator\views\elements\method_detail.ctp:49
+msgid "Method defined in:"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\function_summary.ctp:47
+#: \plugins\api_generator\views\elements\method_detail.ctp:54
+msgid " on line "
+msgstr ""
+
+#: \plugins\api_generator\views\elements\header_search.ctp:26
+msgid "Search"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\method_summary.ctp:8
+msgid "Method Summary:"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\method_summary.ctp:8
+msgid "Methods:"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\method_summary.ctp:16
+msgid "Show/Hide parent methods"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\paging.ctp:9
+msgid "previous"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\paging.ctp:17
+msgid "next"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\properties.ctp:10
+msgid "Properties:"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\properties.ctp:15
+msgid "Show/Hide parent properties"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\sidebar\class_sidebar.ctp:7
+msgid "Class Index"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\sidebar\file_sidebar.ctp:7
+msgid "File browser"
+msgstr ""
+
+#: \plugins\api_generator\views\elements\sidebar\package_sidebar.ctp:7
+msgid "Package Index"
+msgstr ""
+
+#: \plugins\api_generator\views\layouts\default.ctp:25;46
+msgid "CakePHP: API Generator"
+msgstr ""
+
+#: \plugins\api_generator\views\layouts\default.ctp:63
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+

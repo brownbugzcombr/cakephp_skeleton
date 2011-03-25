@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>phpDocumentor Parser Errors and Warnings</title>
+			<link rel="stylesheet" href="media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						<a href="#Post-parsing">Post-parsing</a><br>
+<a href="#administrador.php">administrador.php</a><br>
+<a href="#administradores_controller.php">administradores_controller.php</a><br>
+<a href="#advanced.php">advanced.php</a><br>
+<a href="#app_controller.php">app_controller.php</a><br>
+<a href="#app_error.php">app_error.php</a><br>
+<a href="#banner.php">banner.php</a><br>
+<a href="#blog_controller.php">blog_controller.php</a><br>
+<a href="#categoria.php">categoria.php</a><br>
+<a href="#ckeditor.php">ckeditor.php</a><br>
+<a href="#ckeditor_php4.php">ckeditor_php4.php</a><br>
+<a href="#ckeditor_php5.php">ckeditor_php5.php</a><br>
+<a href="#client_params.inc">client_params.inc</a><br>
+<a href="#comentario.php">comentario.php</a><br>
+<a href="#comentarios_controller.php">comentarios_controller.php</a><br>
+<a href="#contato.php">contato.php</a><br>
+<a href="#contatos_controller.php">contatos_controller.php</a><br>
+<a href="#cropimage.php">cropimage.php</a><br>
+<a href="#css.php">css.php</a><br>
+<a href="#csv.php">csv.php</a><br>
+<a href="#database.php">database.php</a><br>
+<a href="#db_acl.php">db_acl.php</a><br>
+<a href="#dicas_controller.php">dicas_controller.php</a><br>
+<a href="#en.php">en.php</a><br>
+<a href="#encode_json.inc">encode_json.inc</a><br>
+<a href="#encode_urlpath.inc">encode_urlpath.inc</a><br>
+<a href="#enquete.php">enquete.php</a><br>
+<a href="#enquetes_controller.php">enquetes_controller.php</a><br>
+<a href="#enquete_resposta.php">enquete_resposta.php</a><br>
+<a href="#enquete_resposta_usuario.php">enquete_resposta_usuario.php</a><br>
+<a href="#escolha.php">escolha.php</a><br>
+<a href="#events.php">events.php</a><br>
+<a href="#favorito.php">favorito.php</a><br>
+<a href="#favoritos_controller.php">favoritos_controller.php</a><br>
+<a href="#fck.php">fck.php</a><br>
+<a href="#filemanager.class.php">filemanager.class.php</a><br>
+<a href="#filemanager.config.php">filemanager.config.php</a><br>
+<a href="#filemanager.inc">filemanager.inc</a><br>
+<a href="#filemanager.php">filemanager.php</a><br>
+<a href="#fr.php">fr.php</a><br>
+<a href="#home_controller.php">home_controller.php</a><br>
+<a href="#i18n.php">i18n.php</a><br>
+<a href="#ib_home_controller.php">ib_home_controller.php</a><br>
+<a href="#ib_imagem.php">ib_imagem.php</a><br>
+<a href="#imagebank_app_controller.php">imagebank_app_controller.php</a><br>
+<a href="#imagebank_app_model.php">imagebank_app_model.php</a><br>
+<a href="#imbnks_controller.test.php">imbnks_controller.test.php</a><br>
+<a href="#importado.php">importado.php</a><br>
+<a href="#index.php">index.php</a><br>
+<a href="#info.php">info.php</a><br>
+<a href="#interesse.php">interesse.php</a><br>
+<a href="#jqueryFileTree.php">jqueryFileTree.php</a><br>
+<a href="#jq_imgcrop.php">jq_imgcrop.php</a><br>
+<a href="#livros_controller.php">livros_controller.php</a><br>
+<a href="#media_controller.php">media_controller.php</a><br>
+<a href="#meio_upload.php">meio_upload.php</a><br>
+<a href="#mensagem.php">mensagem.php</a><br>
+<a href="#mensagens_controller.php">mensagens_controller.php</a><br>
+<a href="#negocio.php">negocio.php</a><br>
+<a href="#nl.php">nl.php</a><br>
+<a href="#noticias_controller.php">noticias_controller.php</a><br>
+<a href="#oportunidade.php">oportunidade.php</a><br>
+<a href="#oportunidades_controller.php">oportunidades_controller.php</a><br>
+<a href="#perdido.php">perdido.php</a><br>
+<a href="#pergunta.php">pergunta.php</a><br>
+<a href="#perguntas_controller.php">perguntas_controller.php</a><br>
+<a href="#pesquisa.php">pesquisa.php</a><br>
+<a href="#pesquisas_controller.php">pesquisas_controller.php</a><br>
+<a href="#phpass.php">phpass.php</a><br>
+<a href="#phpthumb.bmp.php">phpthumb.bmp.php</a><br>
+<a href="#phpthumb.class.php">phpthumb.class.php</a><br>
+<a href="#phpThumb.demo.check.php">phpThumb.demo.check.php</a><br>
+<a href="#phpThumb.demo.demo.php">phpThumb.demo.demo.php</a><br>
+<a href="#phpThumb.demo.gallery.php">phpThumb.demo.gallery.php</a><br>
+<a href="#phpThumb.demo.object.php">phpThumb.demo.object.php</a><br>
+<a href="#phpThumb.demo.object.simple.php">phpThumb.demo.object.simple.php</a><br>
+<a href="#phpThumb.demo.random.php">phpThumb.demo.random.php</a><br>
+<a href="#phpThumb.demo.showpic.php">phpThumb.demo.showpic.php</a><br>
+<a href="#phpthumb.filters.php">phpthumb.filters.php</a><br>
+<a href="#phpthumb.functions.php">phpthumb.functions.php</a><br>
+<a href="#phpthumb.gif.php">phpthumb.gif.php</a><br>
+<a href="#phpthumb.ico.php">phpthumb.ico.php</a><br>
+<a href="#phpThumb.php">phpThumb.php</a><br>
+<a href="#phpthumb.unsharp.php">phpthumb.unsharp.php</a><br>
+<a href="#plugin_handler.php">plugin_handler.php</a><br>
+<a href="#post.php">post.php</a><br>
+<a href="#posts_controller.php">posts_controller.php</a><br>
+<a href="#precadastro.php">precadastro.php</a><br>
+<a href="#privacidade.php">privacidade.php</a><br>
+<a href="#pt-br.php">pt-br.php</a><br>
+<a href="#ramo_atividade.php">ramo_atividade.php</a><br>
+<a href="#ramo_detalhe.php">ramo_detalhe.php</a><br>
+<a href="#ramo_tipo.php">ramo_tipo.php</a><br>
+<a href="#replace.php">replace.php</a><br>
+<a href="#replaceall.php">replaceall.php</a><br>
+<a href="#resposta.php">resposta.php</a><br>
+<a href="#resposta_cultural.php">resposta_cultural.php</a><br>
+<a href="#sample_posteddata.php">sample_posteddata.php</a><br>
+<a href="#sessions.php">sessions.php</a><br>
+<a href="#skeleton.php">skeleton.php</a><br>
+<a href="#standalone.php">standalone.php</a><br>
+<a href="#tag.php">tag.php</a><br>
+<a href="#tag.test.php">tag.test.php</a><br>
+<a href="#tag_fixture.php">tag_fixture.php</a><br>
+<a href="#test.php">test.php</a><br>
+<a href="#texto.php">texto.php</a><br>
+<a href="#thumb.php">thumb.php</a><br>
+<a href="#tvantagem.php">tvantagem.php</a><br>
+<a href="#usuario.php">usuario.php</a><br>
+<a href="#usuarios_controller.php">usuarios_controller.php</a><br>
+<a href="#usuario_escolha.php">usuario_escolha.php</a><br>
+<a href="#usuario_privacidade.php">usuario_privacidade.php</a><br>
+<a href="#usuario_resposta.php">usuario_resposta.php</a><br>
+<a href="#video.php">video.php</a><br>
+<a href="#__usuario.php">__usuario.php</a><br>
+<a name="Post-parsing"></a>
+<h1>Post-parsing</h1>
+<h2>Warnings:</h2><br>
+<b>Warning</b> - Class Usuario parent AppModel not found<br>
+<b>Warning</b> - Class Tvantagem parent AppModel not found<br>
+<b>Warning</b> - Class UsuarioEscolha parent AppModel not found<br>
+<b>Warning</b> - Class UsuarioPrivacidade parent AppModel not found<br>
+<b>Warning</b> - Class UsuarioResposta parent AppModel not found<br>
+<b>Warning</b> - Class Tag parent AppModel not found<br>
+<b>Warning</b> - Class RespostaCultural parent AppModel not found<br>
+<b>Warning</b> - Class RamoAtividade parent AppModel not found<br>
+<b>Warning</b> - Class RamoDetalhe parent AppModel not found<br>
+<b>Warning</b> - Class RamoTipo parent AppModel not found<br>
+<b>Warning</b> - Class Resposta parent AppModel not found<br>
+<b>Warning</b> - Class Usuario parent AppModel not found<br>
+<b>Warning</b> - Class JqImgcropComponent parent Object not found<br>
+<b>Warning</b> - Class FckHelper parent Helper not found<br>
+<b>Warning</b> - Class CsvHelper parent AppHelper not found<br>
+<b>Warning</b> - Class InteresseHelper parent AppHelper not found<br>
+<b>Warning</b> - Class TextoHelper parent AppHelper not found<br>
+<b>Warning</b> - Class VideoHelper parent Helper not found<br>
+<b>Warning</b> - Class TagFixture parent CakeTestFixture not found<br>
+<b>Warning</b> - Class TagTestCase parent CakeTestCase not found<br>
+<b>Warning</b> - Class ImagebankAppModel parent AppModel not found<br>
+<b>Warning</b> - Class TestImbnksController parent ImbnksController not found<br>
+<b>Warning</b> - Class ImbnksControllerTestCase parent CakeTestCase not found<br>
+<b>Warning</b> - Class CropimageHelper parent Helper not found<br>
+<b>Warning</b> - Class Precadastro parent AppModel not found<br>
+<b>Warning</b> - Class Post parent AppModel not found<br>
+<b>Warning</b> - Class Comentario parent AppModel not found<br>
+<b>Warning</b> - Class Categoria parent AppModel not found<br>
+<b>Warning</b> - Class Contato parent AppModel not found<br>
+<b>Warning</b> - Class Enquete parent AppModel not found<br>
+<b>Warning</b> - Class EnqueteResposta parent AppModel not found<br>
+<b>Warning</b> - Class MeioUploadBehavior parent ModelBehavior not found<br>
+<b>Warning</b> - Class Banner parent AppModel not found<br>
+<b>Warning</b> - Class SessionsSchema parent CakeSchema not found<br>
+<b>Warning</b> - Class PhpassComponent parent Object not found<br>
+<b>Warning</b> - Class PluginHandlerComponent parent Object not found<br>
+<b>Warning</b> - Class Administrador parent AppModel not found<br>
+<b>Warning</b> - Class EnqueteRespostaUsuario parent AppModel not found<br>
+<b>Warning</b> - Class Escolha parent AppModel not found<br>
+<b>Warning</b> - Class Perdido parent AppModel not found<br>
+<b>Warning</b> - Class AppController parent Controller not found<br>
+<b>Warning</b> - Class Pergunta parent AppModel not found<br>
+<b>Warning</b> - Class Pesquisa parent AppModel not found<br>
+<b>Warning</b> - Class Oportunidade parent AppModel not found<br>
+<b>Warning</b> - Class Negocio parent AppModel not found<br>
+<b>Warning</b> - Class Favorito parent AppModel not found<br>
+<b>Warning</b> - Class Importado parent AppModel not found<br>
+<b>Warning</b> - Class i18nSchema parent CakeSchema not found<br>
+<b>Warning</b> - Class Mensagem parent AppModel not found<br>
+<b>Warning</b> - 
+duplicate class element "CKEditor" in file C:\_work\xampp\htdocs\skel\app\webroot\js\ckeditor\ckeditor_php5.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - Class PrivacidadeHelper parent AppHelper not found<br>
+<b>Warning</b> - 
+duplicate define element "ROOT" in file C:\_work\xampp\htdocs\skel\app\webroot\test.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "DS" in file C:\_work\xampp\htdocs\skel\app\webroot\test.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate class element "Usuario" in file C:\_work\xampp\htdocs\skel\app\models\__usuario.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "APP_PATH" in file C:\_work\xampp\htdocs\skel\app\webroot\test.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - Class DbAclSchema parent CakeSchema not found<br>
+<b>Warning</b> - 
+duplicate define element "CAKE_CORE_INCLUDE_PATH" in file C:\_work\xampp\htdocs\skel\app\webroot\test.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "WWW_ROOT" in file C:\_work\xampp\htdocs\skel\app\webroot\test.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "WEBROOT_DIR" in file C:\_work\xampp\htdocs\skel\app\webroot\test.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - Class AppError parent ErrorHandler not found<br>
+<b>Warning</b> - 
+duplicate define element "CORE_PATH" in file C:\_work\xampp\htdocs\skel\app\webroot\test.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "APP_DIR" in file C:\_work\xampp\htdocs\skel\app\webroot\test.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<a name="acl.ini.php"></a>
+<h1>acl.ini.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 69</b> - File "C:\_work\xampp\htdocs\skel\app\config\acl.ini.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="administrador.php"></a>
+<h1>administrador.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class Administrador<br>
+<b>Warning on line 6</b> - File "C:\_work\xampp\htdocs\skel\app\models\administrador.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="administradores_controller.php"></a>
+<h1>administradores_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class AdministradoresController<br>
+<b>Warning on line 52</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\administradores_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="advanced.php"></a>
+<h1>advanced.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 92</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\js\ckeditor\_samples\php\advanced.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="app_controller.php"></a>
+<h1>app_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class AppController<br>
+<b>Warning on line 135</b> - File "C:\_work\xampp\htdocs\skel\app\app_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="app_error.php"></a>
+<h1>app_error.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class AppError<br>
+<b>Warning on line 23</b> - File "C:\_work\xampp\htdocs\skel\app\app_error.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="banner.php"></a>
+<h1>banner.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Banner<br>
+<b>Warning on line 8</b> - File "C:\_work\xampp\htdocs\skel\app\models\banner.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="blog_controller.php"></a>
+<h1>blog_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 4</b> - no @package tag was used in a DocBlock for class BlogController<br>
+<b>Warning on line 76</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\blog_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="categoria.php"></a>
+<h1>categoria.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Categoria<br>
+<b>Warning on line 24</b> - File "C:\_work\xampp\htdocs\skel\app\models\categoria.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ckeditor.php"></a>
+<h1>ckeditor.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 28</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\js\ckeditor\ckeditor.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ckeditor_php4.php"></a>
+<h1>ckeditor_php4.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 17</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 17</b> - Unknown tag "@code" used<br>
+<b>Warning on line 18</b> - no @package tag was used in a DocBlock for class CKEditor<br>
+<b>Warning on line 39</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 39</b> - Unknown tag "@code" used<br>
+<b>Warning on line 51</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 51</b> - Unknown tag "@code" used<br>
+<b>Warning on line 70</b> - Unknown tag "@code" used<br>
+<b>Warning on line 70</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 134</b> - Unknown tag "@code" used<br>
+<b>Warning on line 134</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 134</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 134</b> - Unknown tag "@code" used<br>
+<b>Warning on line 176</b> - Unknown tag "@code" used<br>
+<b>Warning on line 176</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 219</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 219</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 219</b> - Unknown tag "@code" used<br>
+<b>Warning on line 219</b> - Unknown tag "@code" used<br>
+<b>Warning on line 274</b> - Unknown tag "@code" used<br>
+<b>Warning on line 274</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 314</b> - Unknown tag "@code" used<br>
+<b>Warning on line 314</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 592</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\js\ckeditor\ckeditor_php4.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ckeditor_php5.php"></a>
+<h1>ckeditor_php5.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 17</b> - Unknown tag "@code" used<br>
+<b>Warning on line 17</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 18</b> - no @package tag was used in a DocBlock for class CKEditor<br>
+<b>Warning on line 37</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 37</b> - Unknown tag "@code" used<br>
+<b>Warning on line 49</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 49</b> - Unknown tag "@code" used<br>
+<b>Warning on line 68</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 68</b> - Unknown tag "@code" used<br>
+<b>Warning on line 130</b> - Unknown tag "@code" used<br>
+<b>Warning on line 130</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 130</b> - Unknown tag "@code" used<br>
+<b>Warning on line 130</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 172</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 172</b> - Unknown tag "@code" used<br>
+<b>Warning on line 215</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 215</b> - Unknown tag "@code" used<br>
+<b>Warning on line 215</b> - Unknown tag "@code" used<br>
+<b>Warning on line 215</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 270</b> - Unknown tag "@code" used<br>
+<b>Warning on line 270</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 310</b> - Unknown tag "@code" used<br>
+<b>Warning on line 310</b> - Unknown tag "@endcode" used<br>
+<b>Warning on line 582</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\js\ckeditor\ckeditor_php5.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="client_params.inc"></a>
+<h1>client_params.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 76</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\fmenager\connectors\lasso\client_params.inc" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="comentario.php"></a>
+<h1>comentario.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Comentario<br>
+<b>Warning on line 27</b> - File "C:\_work\xampp\htdocs\skel\app\models\comentario.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="comentarios_controller.php"></a>
+<h1>comentarios_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class ComentariosController<br>
+<b>Warning on line 34</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\comentarios_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="contato.php"></a>
+<h1>contato.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class Contato<br>
+<b>Warning on line 5</b> - File "C:\_work\xampp\htdocs\skel\app\models\contato.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="contatos_controller.php"></a>
+<h1>contatos_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class ContatosController<br>
+<b>Warning on line 80</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\contatos_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="cropimage.php"></a>
+<h1>cropimage.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class CropimageHelper<br>
+<b>Warning on line 72</b> - File "C:\_work\xampp\htdocs\skel\app\plugins\imagebank\views\helpers\cropimage.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="css.php"></a>
+<h1>css.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 19</b> - package default is already in category Controllers, will now replace with category default<br>
+<a name="csv.php"></a>
+<h1>csv.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class CsvHelper<br>
+<b>Warning on line 61</b> - File "C:\_work\xampp\htdocs\skel\app\views\helpers\csv.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="database.php"></a>
+<h1>database.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class DATABASE_CONFIG<br>
+<b>Warning on line 24</b> - File "C:\_work\xampp\htdocs\skel\app\config\database.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="db_acl.php"></a>
+<h1>db_acl.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 28</b> - DocBlock would be page-level, but precedes class "DbAclSchema", use another DocBlock to document the file<br>
+<a name="dicas_controller.php"></a>
+<h1>dicas_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 4</b> - no @package tag was used in a DocBlock for class DicasController<br>
+<b>Warning on line 72</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\dicas_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="en.php"></a>
+<h1>en.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 28</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\fmenager\connectors\php\lang\en.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="encode_json.inc"></a>
+<h1>encode_json.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 409</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\fmenager\connectors\lasso\encode_json.inc" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="encode_urlpath.inc"></a>
+<h1>encode_urlpath.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\fmenager\connectors\lasso\encode_urlpath.inc" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="enquete.php"></a>
+<h1>enquete.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Enquete<br>
+<b>Warning on line 25</b> - File "C:\_work\xampp\htdocs\skel\app\models\enquete.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="enquetes_controller.php"></a>
+<h1>enquetes_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class EnquetesController<br>
+<b>Warning on line 88</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\enquetes_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="enquete_resposta.php"></a>
+<h1>enquete_resposta.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class EnqueteResposta<br>
+<b>Warning on line 33</b> - File "C:\_work\xampp\htdocs\skel\app\models\enquete_resposta.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="enquete_resposta_usuario.php"></a>
+<h1>enquete_resposta_usuario.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class EnqueteRespostaUsuario<br>
+<b>Warning on line 27</b> - File "C:\_work\xampp\htdocs\skel\app\models\enquete_resposta_usuario.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="escolha.php"></a>
+<h1>escolha.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class Escolha<br>
+<b>Warning on line 6</b> - File "C:\_work\xampp\htdocs\skel\app\models\escolha.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="events.php"></a>
+<h1>events.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 129</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\js\ckeditor\_samples\php\events.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="favorito.php"></a>
+<h1>favorito.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class Favorito<br>
+<b>Warning on line 22</b> - File "C:\_work\xampp\htdocs\skel\app\models\favorito.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="favoritos_controller.php"></a>
+<h1>favoritos_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class FavoritosController<br>
+<b>Warning on line 40</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\favoritos_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="fck.php"></a>
+<h1>fck.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class FckHelper<br>
+<b>Warning on line 18</b> - File "C:\_work\xampp\htdocs\skel\app\views\helpers\fck.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="filemanager.class.php"></a>
+<h1>filemanager.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 13</b> - no @package tag was used in a DocBlock for class Filemanager<br>
+<b>Warning on line 386</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\fmenager\connectors\php\filemanager.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="filemanager.config.php"></a>
+<h1>filemanager.config.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 19</b> - no @package tag was used in a DocBlock for file C:\_work\xampp\htdocs\skel\app\webroot\fmenager\connectors\php\filemanager.config.php<br>
+<a name="filemanager.inc"></a>
+<h1>filemanager.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 210</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\fmenager\connectors\lasso\filemanager.inc" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="filemanager.php"></a>
+<h1>filemanager.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 97</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\fmenager\connectors\php\filemanager.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="fr.php"></a>
+<h1>fr.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 30</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\fmenager\connectors\php\lang\fr.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="home_controller.php"></a>
+<h1>home_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class HomeController<br>
+<b>Warning on line 194</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\home_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="i18n.php"></a>
+<h1>i18n.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 28</b> - DocBlock would be page-level, but precedes class "i18nSchema", use another DocBlock to document the file<br>
+<a name="ib_home_controller.php"></a>
+<h1>ib_home_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 7</b> - DocBlock would be page-level, but precedes class "IbHomeController", use another DocBlock to document the file<br>
+<b>Warning on line 7</b> - package default is already in category Models, will now replace with category Controllers<br>
+<a name="ib_imagem.php"></a>
+<h1>ib_imagem.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class Imagem<br>
+<b>Warning on line 10</b> - File "C:\_work\xampp\htdocs\skel\app\plugins\imagebank\models\ib_imagem.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="imagebank_app_controller.php"></a>
+<h1>imagebank_app_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class ImagebankAppController<br>
+<b>Warning on line 12</b> - File "C:\_work\xampp\htdocs\skel\app\plugins\imagebank\imagebank_app_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="imagebank_app_model.php"></a>
+<h1>imagebank_app_model.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class ImagebankAppModel<br>
+<b>Warning on line 6</b> - File "C:\_work\xampp\htdocs\skel\app\plugins\imagebank\imagebank_app_model.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="imbnks_controller.test.php"></a>
+<h1>imbnks_controller.test.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 4</b> - no @package tag was used in a DocBlock for class TestImbnksController<br>
+<b>Warning on line 12</b> - no @package tag was used in a DocBlock for class ImbnksControllerTestCase<br>
+<b>Warning on line 24</b> - File "C:\_work\xampp\htdocs\skel\app\plugins\imagebank\tests\cases\controllers\imbnks_controller.test.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="importado.php"></a>
+<h1>importado.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class Importado<br>
+<b>Warning on line 4</b> - File "C:\_work\xampp\htdocs\skel\app\models\importado.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="index.php"></a>
+<h1>index.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 3</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\cache\index.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 3</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\cache\source\index.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 10</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\index.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 17</b> - Page-level DocBlock precedes "require 'webroot'.DIRECTORY_SEPARATOR.'index.php'", use another DocBlock to document the source element<br>
+<b>Warning on line 17</b> - package default is already in category Controllers, will now replace with category default<br>
+<b>Warning on line 21</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\demo\index.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 71</b> - 
+duplicate define element "APP_PATH" in file C:\_work\xampp\htdocs\skel\app\webroot\index.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 72</b> - 
+duplicate define element "CORE_PATH" in file C:\_work\xampp\htdocs\skel\app\webroot\index.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<a name="info.php"></a>
+<h1>info.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 6</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\info.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="interesse.php"></a>
+<h1>interesse.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class InteresseHelper<br>
+<b>Warning on line 20</b> - File "C:\_work\xampp\htdocs\skel\app\views\helpers\interesse.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="jqueryFileTree.php"></a>
+<h1>jqueryFileTree.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 44</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\fmenager\scripts\jquery.filetree\connectors\jqueryFileTree.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="jq_imgcrop.php"></a>
+<h1>jq_imgcrop.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class JqImgcropComponent<br>
+<b>Warning on line 107</b> - File "C:\_work\xampp\htdocs\skel\app\plugins\imagebank\controllers\components\jq_imgcrop.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="livros_controller.php"></a>
+<h1>livros_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 4</b> - no @package tag was used in a DocBlock for class LivrosController<br>
+<b>Warning on line 56</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\livros_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="media_controller.php"></a>
+<h1>media_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class MediaController<br>
+<b>Warning on line 178</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\media_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="meio_upload.php"></a>
+<h1>meio_upload.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 23</b> - no @package tag was used in a DocBlock for class MeioUploadBehavior<br>
+<a name="mensagem.php"></a>
+<h1>mensagem.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Mensagem<br>
+<b>Warning on line 25</b> - File "C:\_work\xampp\htdocs\skel\app\models\mensagem.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="mensagens_controller.php"></a>
+<h1>mensagens_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class MensagensController<br>
+<b>Warning on line 120</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\mensagens_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="negocio.php"></a>
+<h1>negocio.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Negocio<br>
+<b>Warning on line 17</b> - File "C:\_work\xampp\htdocs\skel\app\models\negocio.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="nl.php"></a>
+<h1>nl.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 30</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\fmenager\connectors\php\lang\nl.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="noticias_controller.php"></a>
+<h1>noticias_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 4</b> - no @package tag was used in a DocBlock for class NoticiasController<br>
+<b>Warning on line 65</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\noticias_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="oportunidade.php"></a>
+<h1>oportunidade.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class Oportunidade<br>
+<b>Warning on line 15</b> - File "C:\_work\xampp\htdocs\skel\app\models\oportunidade.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="oportunidades_controller.php"></a>
+<h1>oportunidades_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class OportunidadesController<br>
+<b>Warning on line 103</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\oportunidades_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="perdido.php"></a>
+<h1>perdido.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class Perdido<br>
+<b>Warning on line 4</b> - File "C:\_work\xampp\htdocs\skel\app\models\perdido.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="pergunta.php"></a>
+<h1>pergunta.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Pergunta<br>
+<b>Warning on line 33</b> - File "C:\_work\xampp\htdocs\skel\app\models\pergunta.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="perguntas_controller.php"></a>
+<h1>perguntas_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class PerguntasController<br>
+<b>Warning on line 43</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\perguntas_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="pesquisa.php"></a>
+<h1>pesquisa.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Pesquisa<br>
+<b>Warning on line 37</b> - File "C:\_work\xampp\htdocs\skel\app\models\pesquisa.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="pesquisas_controller.php"></a>
+<h1>pesquisas_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class PesquisasController<br>
+<b>Warning on line 21</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\pesquisas_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpass.php"></a>
+<h1>phpass.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class PhpassComponent<br>
+<b>Warning on line 224</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\components\phpass.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpthumb.bmp.php"></a>
+<h1>phpthumb.bmp.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 20</b> - no @package tag was used in a DocBlock for class phpthumb_bmp<br>
+<b>Warning on line 877</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\phpthumb.bmp.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpthumb.class.php"></a>
+<h1>phpthumb.class.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 17</b> - no @package tag was used in a DocBlock for class phpthumb<br>
+<b>Warning on line 3947</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\phpthumb.class.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpThumb.demo.check.php"></a>
+<h1>phpThumb.demo.check.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 466</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\demo\phpThumb.demo.check.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpThumb.demo.demo.php"></a>
+<h1>phpThumb.demo.demo.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 292</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\demo\phpThumb.demo.demo.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpThumb.demo.gallery.php"></a>
+<h1>phpThumb.demo.gallery.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 98</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\demo\phpThumb.demo.gallery.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpThumb.demo.object.php"></a>
+<h1>phpThumb.demo.object.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 83</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\demo\phpThumb.demo.object.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpThumb.demo.object.simple.php"></a>
+<h1>phpThumb.demo.object.simple.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 60</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\demo\phpThumb.demo.object.simple.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpThumb.demo.random.php"></a>
+<h1>phpThumb.demo.random.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 94</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\demo\phpThumb.demo.random.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpThumb.demo.showpic.php"></a>
+<h1>phpThumb.demo.showpic.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 130</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\demo\phpThumb.demo.showpic.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpthumb.filters.php"></a>
+<h1>phpthumb.filters.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class phpthumb_filters<br>
+<b>Warning on line 1536</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\phpthumb.filters.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpthumb.functions.php"></a>
+<h1>phpthumb.functions.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class phpthumb_functions<br>
+<b>Warning on line 1043</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\phpthumb.functions.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpthumb.gif.php"></a>
+<h1>phpthumb.gif.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 164</b> - no @package tag was used in a DocBlock for class CGIFLZW<br>
+<b>Warning on line 379</b> - no @package tag was used in a DocBlock for class CGIFCOLORTABLE<br>
+<b>Warning on line 474</b> - no @package tag was used in a DocBlock for class CGIFFILEHEADER<br>
+<b>Warning on line 551</b> - no @package tag was used in a DocBlock for class CGIFIMAGEHEADER<br>
+<b>Warning on line 622</b> - no @package tag was used in a DocBlock for class CGIFIMAGE<br>
+<b>Warning on line 794</b> - no @package tag was used in a DocBlock for class CGIF<br>
+<b>Warning on line 1172</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\phpthumb.gif.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpthumb.ico.php"></a>
+<h1>phpthumb.ico.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - no @package tag was used in a DocBlock for class phpthumb_ico<br>
+<b>Warning on line 118</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\phpthumb.ico.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpThumb.php"></a>
+<h1>phpThumb.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 612</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\phpThumb.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="phpthumb.unsharp.php"></a>
+<h1>phpthumb.unsharp.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 39</b> - no @package tag was used in a DocBlock for class phpUnsharpMask<br>
+<b>Warning on line 161</b> - File "C:\_work\xampp\htdocs\skel\app\vendors\phpThumb\phpthumb.unsharp.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="plugin_handler.php"></a>
+<h1>plugin_handler.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - no @package tag was used in a DocBlock for class PluginHandlerComponent<br>
+<b>Warning on line 132</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\components\plugin_handler.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="post.php"></a>
+<h1>post.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 7</b> - package default is already in category default, will now replace with category Models<br>
+<b>Warning on line 7</b> - package Skeleton is already in category Controllers, will now replace with category Models<br>
+<b>Warning on line 7</b> - DocBlock would be page-level, but precedes class "Post", use another DocBlock to document the file<br>
+<a name="posts_controller.php"></a>
+<h1>posts_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - package default is already in category default, will now replace with category Controllers<br>
+<b>Warning on line 11</b> - DocBlock would be page-level, but precedes class "PostsController", use another DocBlock to document the file<br>
+<b>Warning on line 42</b> - Unknown tag "@todo:" used<br>
+<a name="precadastro.php"></a>
+<h1>precadastro.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Precadastro<br>
+<b>Warning on line 6</b> - File "C:\_work\xampp\htdocs\skel\app\models\precadastro.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="privacidade.php"></a>
+<h1>privacidade.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class PrivacidadeHelper<br>
+<b>Warning on line 37</b> - File "C:\_work\xampp\htdocs\skel\app\views\helpers\privacidade.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="pt-br.php"></a>
+<h1>pt-br.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 30</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\fmenager\connectors\php\lang\pt-br.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ramo_atividade.php"></a>
+<h1>ramo_atividade.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class RamoAtividade<br>
+<b>Warning on line 13</b> - File "C:\_work\xampp\htdocs\skel\app\models\ramo_atividade.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ramo_detalhe.php"></a>
+<h1>ramo_detalhe.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class RamoDetalhe<br>
+<b>Warning on line 8</b> - File "C:\_work\xampp\htdocs\skel\app\models\ramo_detalhe.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ramo_tipo.php"></a>
+<h1>ramo_tipo.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class RamoTipo<br>
+<b>Warning on line 8</b> - File "C:\_work\xampp\htdocs\skel\app\models\ramo_tipo.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="replace.php"></a>
+<h1>replace.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 62</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\js\ckeditor\_samples\php\replace.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="replaceall.php"></a>
+<h1>replaceall.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 67</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\js\ckeditor\_samples\php\replaceall.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="resposta.php"></a>
+<h1>resposta.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Resposta<br>
+<b>Warning on line 36</b> - File "C:\_work\xampp\htdocs\skel\app\models\resposta.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="resposta_cultural.php"></a>
+<h1>resposta_cultural.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class RespostaCultural<br>
+<b>Warning on line 7</b> - File "C:\_work\xampp\htdocs\skel\app\models\resposta_cultural.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sample_posteddata.php"></a>
+<h1>sample_posteddata.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 58</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\js\ckeditor\_samples\sample_posteddata.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sessions.php"></a>
+<h1>sessions.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 28</b> - DocBlock would be page-level, but precedes class "SessionsSchema", use another DocBlock to document the file<br>
+<a name="skeleton.php"></a>
+<h1>skeleton.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - File "C:\_work\xampp\htdocs\skel\app\config\skeleton.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="standalone.php"></a>
+<h1>standalone.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 63</b> - File "C:\_work\xampp\htdocs\skel\app\webroot\js\ckeditor\_samples\php\standalone.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="tag.php"></a>
+<h1>tag.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class Tag<br>
+<b>Warning on line 25</b> - File "C:\_work\xampp\htdocs\skel\app\models\tag.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="tag.test.php"></a>
+<h1>tag.test.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 4</b> - no @package tag was used in a DocBlock for class TagTestCase<br>
+<b>Warning on line 17</b> - File "C:\_work\xampp\htdocs\skel\app\tests\cases\models\tag.test.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="tag_fixture.php"></a>
+<h1>tag_fixture.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class TagFixture<br>
+<b>Warning on line 19</b> - File "C:\_work\xampp\htdocs\skel\app\tests\fixtures\tag_fixture.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="test.php"></a>
+<h1>test.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 71</b> - 
+duplicate define element "APP_PATH" in file C:\_work\xampp\htdocs\skel\app\webroot\test.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 72</b> - 
+duplicate define element "CORE_PATH" in file C:\_work\xampp\htdocs\skel\app\webroot\test.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 83</b> - 
+duplicate define element "TEST_CAKE_CORE_INCLUDE_PATH" in file C:\_work\xampp\htdocs\skel\app\webroot\test.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<a name="texto.php"></a>
+<h1>texto.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class TextoHelper<br>
+<b>Warning on line 55</b> - File "C:\_work\xampp\htdocs\skel\app\views\helpers\texto.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="thumb.php"></a>
+<h1>thumb.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 8</b> - DocBlock would be page-level, but precedes class "ThumbComponent", use another DocBlock to document the file<br>
+<a name="tvantagem.php"></a>
+<h1>tvantagem.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Tvantagem<br>
+<b>Warning on line 22</b> - File "C:\_work\xampp\htdocs\skel\app\models\tvantagem.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="usuario.php"></a>
+<h1>usuario.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Usuario<br>
+<b>Warning on line 307</b> - File "C:\_work\xampp\htdocs\skel\app\models\usuario.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="usuarios_controller.php"></a>
+<h1>usuarios_controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class UsuariosController<br>
+<b>Warning on line 696</b> - File "C:\_work\xampp\htdocs\skel\app\controllers\usuarios_controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="usuario_escolha.php"></a>
+<h1>usuario_escolha.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class UsuarioEscolha<br>
+<b>Warning on line 15</b> - File "C:\_work\xampp\htdocs\skel\app\models\usuario_escolha.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="usuario_privacidade.php"></a>
+<h1>usuario_privacidade.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class UsuarioPrivacidade<br>
+<b>Warning on line 43</b> - File "C:\_work\xampp\htdocs\skel\app\models\usuario_privacidade.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="usuario_resposta.php"></a>
+<h1>usuario_resposta.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class UsuarioResposta<br>
+<b>Warning on line 31</b> - File "C:\_work\xampp\htdocs\skel\app\models\usuario_resposta.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="video.php"></a>
+<h1>video.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class VideoHelper<br>
+<b>Warning on line 20</b> - File "C:\_work\xampp\htdocs\skel\app\views\helpers\video.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="__usuario.php"></a>
+<h1>__usuario.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 1</b> - no @package tag was used in a DocBlock for class Usuario<br>
+<b>Warning on line 175</b> - File "C:\_work\xampp\htdocs\skel\app\models\__usuario.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 18 Mar 2011 10:10:23 -0300 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</body>
+</html>

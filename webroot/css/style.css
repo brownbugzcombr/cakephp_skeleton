@@ -1,0 +1,895 @@
+/*
+Created: 18/11/2010
+Updated:
+Site Colors: #039/azul-escuro - #0f89df/azul-claro - #333/preto - #eee805/verde-claro - #a6b62d/verde-escuro
+
+RESET*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,input,textarea,button,select,option,optgroup,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0}
+
+/*GERAL*/
+body,input,textarea,select,button{color:#333;font:11px/16px "Arial",Tahoma,Verdana}
+code,kbd,pre,samp,tt{font-family:"andale mono",consolas,monaco,"lucida console","courier new",courier,monospace}
+
+/*TIPOGRAFIA*/
+h1,h2,h3,h4,h5,h6{color:#039;line-height:1.3em;font-size:15px;font-weight:400}
+em,i,optgroup{font-style:italic}
+strong,b{font-weight:700}
+blockquote,q,cite{font-style:italic}
+blockquote:before,blockquote:after,q:before,q:after{content:""}
+blockquote,q{quotes:"" ""}
+pre{white-space:pre}
+abbr,acronym,dfn{border-bottom:1px dotted;cursor:help}
+var{font-style:400px}
+center{text-align:center}
+
+/*LINK*/
+a{text-decoration:none;color:#0f89df}
+/*a:visited{}*/
+a:hover{text-decoration:underline}
+a:active{color:#0f89df !important;outline:none}
+a:focus{outline:1px dotted}
+
+/*BORDA*/
+img,fieldset,input{border:0}/*img,abbr,fieldset*/
+
+/*LISTAS*/
+ul{list-style:none}
+ol{list-style:decimal}
+dt{font-weight:700}
+dd{margin-bottom:1em}
+/*ul li, ol li{margin-left:2em;}
+li ul,li ol{margin-bottom:0.5em;}*/
+
+/*APRESENTACAO*/
+hr{display:none}
+big{font-size:1.4em}
+small,sub,sup{font-size:0.9em}
+sub,sup{line-height:1}
+sub{vertical-align:bottom}
+sup{vertical-align:top}
+del,s,strike{text-decoration:line-through}
+ins{text-decoration:none;background-color:#ffc}
+bdo{border-bottom:1px dotted}
+u{text-decoration:underline}
+
+/*FORM*/
+legend{font-weight:700;color:#333}
+label{/*display:block*/display:inline-block}
+textarea{overflow:auto}
+input[type="button"],input[type="file"],input[type="image"],input[type="reset"],input[type="submit"],input[type="radio"],input[type="checkbox"],button[type="button"],button[type="reset"],button[type="submit"]{cursor:pointer}
+
+input[type="text"],input[type="password"],button,textarea{background:url(../img/input-background.gif) repeat-x 0 bottom #fff;border:1px solid #333;padding:5px 1px;height:13px}
+select{background:url(../img/input-background.gif) repeat-x 0 bottom #fff;border:1px solid #333;padding:1px;height:23px}
+.disabled,.readonly{background-color:#ECE9D8;color:#333}
+input:hover,button:hover,textarea:hover,select:hover,input:focus,button:focus,textarea:focus,select:focus{color:#0f89df !important}
+input:hover[disabled="disabled"],button:hover[disabled="disabled"],textarea:hover[disabled="disabled"],select:hover[disabled="disabled"],input:focus[disabled="disabled"],button:focus[disabled="disabled"],textarea:focus[disabled="disabled"],select:focus[disabled="disabled"]{color:#bbbbbb !important}
+input[disabled="disabled"],select[disabled="disabled"],.disabled{background:none; color:#b8b8b8;border: none;}
+input[disabled="disabled"]:hover,select[disabled="disabled"]:hover,.disabled:hover{color: #bbbbbb}
+
+/*TABELA*/
+table{border-collapse:collapse;border-spacing:0;border:1px solid #333}
+caption,th,td{text-align:left;vertical-align:top}
+th,td{padding:5px 1em;border:1px solid}
+caption{padding-bottom:1em}
+th{font-weight:700}
+
+/*UTEIS*/
+.left{float:left}
+.right{float:right}
+.center{text-align:center}
+.clear{clear:both}
+.inline-block{display:inline-block}
+.first-margin{margin-left:0 !important}
+.last-margin{margin-right:0 !important}
+.top-margin{margin-top:0 !important}
+.bottom-margin{margin-bottom:0 !important}
+.first-padding{padding-left:0 !important}
+.last-padding{padding-right:0 !important}
+.top-padding{padding-top:0 !important}
+.bottom-padding{padding-bottom:0 !important}
+.hidden,.print{display:none}
+.graphic{display:block;overflow:hidden;text-indent:-9999px}
+.centralizar{display:table-cell;vertical-align:middle;text-align:center}
+.mb20{margin-bottom: 20px}
+.pbt13{padding: 13px 0}
+.pointer{cursor: pointer}
+.bold{font-weight:bold;}
+.bordaVideo{
+	border: 1px solid #DCDCE9;
+    float: left;
+    margin: 0 28%;
+    padding: 10px;
+    text-align: center
+}
+.checado, .checar{
+	padding-left: 20px
+}
+.checado.cfiltros, .checar.cfiltros{
+	padding-left: 51px
+}
+.checado{
+	background: url("../img/bg-checkbox-checado.gif") 0 0 no-repeat;
+
+}
+.checar{
+	background: url("../img/bg-checkbox-checar.gif") 0 0 no-repeat;
+}
+.duasColunasLeft {
+	width: 735px
+}
+form#OportunidadesAddForm {
+	background: #ccc;
+	margin: 20px 0 20px 0;
+	padding: 10px
+}
+form#OportunidadesAddForm legend {
+	padding: 10px 0;
+	font-size: 15px;
+	color: #003399
+}
+form#OportunidadesAddForm .ajusteLabelSpan {
+	width: 131px;
+	display: table;
+	text-align: right;
+	margin-right: 20px
+}
+.contCaractere {
+	font-size: 10px
+}
+.mr6 {
+	margin-right: 6px
+}
+.todosCat {margin-left: 20px}
+form#OportunidadesAddForm .ajusteLabel {
+	margin: 10px 0 20px;
+}
+form#OportunidadesAddForm .ajusteLabel label {
+	float: left;
+}
+form#OportunidadesAddForm #OportunidadeTitulo {
+	width: 335px
+}
+
+form#OportunidadesAddForm #OportunidadeTexto {
+	width: 335px;
+	height: 60px
+}
+.titOportunidade{
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 5px
+}
+.mt20{
+	margin-top: 20px
+}
+.mb49{
+	margin-bottom: 49px
+}
+.azulescuro{color: #003399}
+
+
+
+/*BACKGROUNDS*/
+.login-off{background:url(../img/background-login-off.gif) repeat-x 0 0 #fff}
+.login-on{background:url(../img/background-login-on.gif) repeat-x 0 0 #fff}
+.erro-404{background:url(../img/erro-404.jpg) repeat-x top center #fafafb}
+
+/*LAYOUT*/
+#wrap{margin:0 auto;width:985px}
+
+/*LAYOUT-LINKS-PERSONALIZADOS*/
+.link-button{background:url(../img/button-right.png) no-repeat right top;display:inline-table;padding-right:7px}
+/*alterado felipe*/
+.link-button a,.link-button input{background:url(../img/button-left.png) no-repeat left top;color:#039;padding:0 11px 2px 18px;float:left;font-size:12px;font-weight:700;height:28px;line-height:2.3em}
+
+/*CABECALHO*/
+#header{position:relative;height:100px}
+#header h1 a{background:url(../img/telefonica-negocios.gif) no-repeat 0 0;height:100px;width:100px}
+#header h1,#header h2.nosso-negocio{float:left}
+#header h2.nosso-negocio{background:url(../img/telefonica-negocios.gif) no-repeat 0 -100px;margin:8px 0 0 48px;height:83px;width:274px}
+#header h2.telefonica-negocios{float:right;margin-top:24px;height:22px;width:71px}
+
+/*LOGIN-OFF-CADASTRE-SE*/
+#login-off{position:relative;padding:17px 0 17px 15px}
+.cadastre-se{float:left;margin-left:125px;width:278px}
+.cadastre-se p{color:#039;font-size:15px;margin-bottom:5px}
+
+/*LOGIN-OFF-LOGIN*/
+#login{display:inline-block;margin-left:50px}
+#login label{float:left;font-size:12px;font-weight:700;margin-right:23px}
+#login label span{float:right;font-size:10px;font-weight:400}
+#login input[type="text"],#login input[type="password"]{display:block}
+#login .link-button{margin-top:15px;}
+
+#cadastro.login{display:inline-block;margin:17px 0 0 50px;float:none;width: 382px}
+#cadastro.login label{float:left;font-size:12px;font-weight:700;margin-right:23px;margin-bottom: 0;width: 129px}
+#cadastro.login label span{float:right;font-size:10px;font-weight:400}
+#cadastro.login input[type="text"],#login input[type="password"]{display:block}
+#cadastro.login .link-button{margin-top:15px;}
+#cadastro.login input#UsuarioEmail {width: 125px;margin-left:0}
+#cadastro.login input#UsuarioSenha {width: 125px;margin-left:0}
+
+/*LOGIN-OFF-CADASTRO*/
+#cadastro{float:left;}
+#cadastro legend{color:#039;font-size:15px;margin-bottom:25px}
+#cadastro label{margin-bottom:15px}
+#cadastro input[type="text"]{width:387px}
+#cadastro input[type="password"]{width:387px}
+#cadastro textarea{height:89px;width:387px}
+#cadastro select{width:392px}
+#cadastro input[type="text"],#cadastro input[type="password"],#cadastro select,#cadastro textarea,#cadastro .documentacao{margin-left:15px}
+#cadastro .campo-txt{float:left;margin-top:6px;text-align:right;width:190px}
+#cadastro .ddd[type="text"]{width:55px}
+#cadastro #UsuarioDdd.desab{width:15px}
+#cadastro .tel[type="text"]{width:305px;padding-left:5px}
+#cadastro #UsuarioTelefone.desabtel{margin-left: 0}
+#cadastro .campo-txt1{float:left;margin-top:6px;text-align:right;width:118px}
+#cadastro .doc{margin-right:5px}
+#cadastro .documentacao{line-height:2.7em}
+#cadastro .documento{display:block}
+#cadastro .documento input{margin-left:205px;width:386px}
+#cadastro .obrigatorio{margin:0 0 5px 205px}
+#cadastro .quebra-line{background:url(../img/quebra-linha-cadastro.gif) no-repeat 0 bottom;margin-bottom:15px}
+#cadastro .file-info{display:inline-block;margin-left:15px}
+#cadastro .alterar-img{float:left;margin:0 145px 0 15px}
+#cadastro .termos{float:left;font-weight:700;margin:0 162px 0 15px}
+#cadastro .file{width:200px}
+#cadastro .outro-tel{position:absolute;right:126px;top:135px;display: block }
+#cadastro .obrigatorio1{margin:0 0 25px 205px}
+#cadastro .empresa-destaque{background-color:#ccc;padding-top:15px;margin-bottom:15px;margin-left:72px;width:622px;}
+#cadastro .ajustecampo {width: 118px}
+
+/*SERVICOS*/
+#servicos{margin-top:30px;position:relative;}
+#servicos .servico-sua-empresa,#servicos .servico-telefonica-negocios{background:url(../img/servico-degrade.gif) no-repeat 5px 268px #fff;padding:15px; }
+#servicos .servico-sua-empresa{border:1px solid #eee805;float:left;width:560px;margin-right: 9px}
+/*-moz-opacity:.70;filter:alpha(opacity=70); opacity:.70;*/
+#servicos .servico-sua-empresa a img{float:left;margin-right:10px}
+#servicos .servico-sua-empresa a img:hover{border:1px solid #eee805;margin:-1px 9px -1px -1px}
+#servicos .servico-sua-empresa h2,#servicos .servico-telefonica-negocios h2{margin-bottom:9px}
+#servicos .servico-sua-empresa p span{color:#0f89df}
+#servicos .servico-sua-empresa .link-button{margin:10px 0 0 35px}
+#servicos .servico-telefonica-negocios{border:1px solid #0f89df;float:left;width:340px;height: 260px }
+#servicos .servico-telefonica-negocios p{margin:24px 0 7px}
+#servicos .servico-telefonica-negocios h2 span{color:#0f89df}
+
+/*LOGIN-ON*/
+#login-on{display:inline-block;padding-left:142px;margin:21px 0}
+.login-on-empresa,.dialogo{float:left;margin-right:20px}
+.dialogo{background:url(../img/login-on-dialogo.gif) no-repeat 0 0;padding:10px;height:43px;width:313px}
+.dialogo-content{margin-top:5px}
+.dialogo-content li{margin-right:10px}
+.dialogo-content li,#busca,#busca label{float:left}
+#busca{margin-top:15px}
+#busca label{margin-right:10px}
+
+/*LOGIN-ON-MENU-PRINCIPAL*/
+#nav{clear:both;width:985px;float:left}
+#nav li{float:left;margin-right:5px}
+#nav li a{color:#039;display:block;padding:12px 20px 6px;font-weight:bold}
+#nav li a.active{background:url(../img/nav-main.gif) no-repeat left top;display:block;padding:12px 20px 0}
+#nav li a:hover{color:#333}
+#nav li a.active .borda{background:url(../img/nav-main.gif) no-repeat right top #fefefe;float:left;padding:12px 11px 0 0;margin-left:11px;height:22px}
+#nav li a .number{color:#0f89df}
+#nav li a.active,#nav li a.active:hover{padding:0;height:34px}
+
+/*CONTEUDO*/
+#content,#content-total,#sidebar{margin-top:35px;}
+#content,#content-total,#sidebar.mb44{margin-top:44px;}
+#content,#content-total,#sidebar.mb48{margin-top:48px;}
+#content,#content-total,#sidebar.side50{margin-top:50px;}
+#content,#content-total,#sidebar.oportSide{margin-top:40px;}
+#content,#content-all,#content-total,#content-min{float:left;position:relative;margin-bottom:30px;}
+#content{margin-right:25px;width: 767px}
+#content.contenthome{margin-right:16px;width: 767px}
+#content h3{background-color:#039;color:#fff;margin-bottom:15px;padding:2px 0 2px 15px;font-weight: bold;}
+#content h3.ponto-negocios{background-color:#a6b62d}
+#content-all{background:url(../img/perguntas-frequentes.png) no-repeat center bottom #fff;border:1px solid #e1e45a;margin-top:30px;padding:15px 15px 30px;width:943px}
+#content-all div > p{margin-bottom:15px}
+#content-all h3.beneficios{float:left; font-weight:bold;background: #003399;color: #FFFFFF;width: 100%;padding: 2px 0 2px 15px}
+#content-all h3.beneficiosB{float:left; font-weight:bold;color: #003399;padding: 2px 0 2px 0}
+#content-all .link-button{float:right; font-weight:bold}
+#content-total div > p{margin-bottom:10px}
+#content-min{margin:27px 20px 30px;width:555px}
+#content-middle{float:left;margin-top:25px;padding:0 10px 10px 10px;width:450px;}
+#content-middle-left{float:left;margin-top:25px;padding:0 0 10px 20px;width:452px;border-left:1px solid #c4c4da;}
+
+/*TITULOS*/
+.main-title{background:url(../img/title.gif) no-repeat 0 0;margin-bottom:7px;height:35px}
+.title-empresa {
+    background-position: 0 -669px;
+    height: 30px;
+}
+.title-dicas {
+	background-position: 0 -458px;
+	height: 30px;
+	margin: 10px 0
+}
+.quebra-linha{background:url(../img/quebra-linha.gif) no-repeat right 8px}
+.title-veja-tambem{background-position:0 -35px;height:23px;margin-bottom:15px}
+.title-dicas-vc{background-position:0 -58px;clear:both;height:22px;margin-bottom:20px}
+.title-meus-favoritos{background-position:0 -80px;height:17px;margin-bottom:20px}
+div#sidebar.mt0 .title-enquete{background-position:0 -97px;height:26px;margin:0px 0 7px}
+div#sidebar .title-enquete{background-position:0 -97px;height:26px;margin:0px 0 15px}
+.title-t-vantagens{background-position:0 -122px;margin-bottom:5px;height:32px}
+/*Alterado Felipe*/
+.title-sobre-plataforma{background-position:0 -155px;height:32px;}
+.title-perguntas{background-position:0 -187px;height:21px}
+.title-termos{background-position:0 -208px;height:32px}
+.title-contato{background-position:0 -240px;height:24px}
+.title-parceiros{background-position:0 -264px;height:22px}
+.title-cadastro{background-position:0 -286px;height:24px}
+.title-favoritos{background-position:0 -310px;margin-bottom:13px;height:28px}
+.title-telefonica{background-position:0 -338px;height:32px}
+.title-sobre{background-position:0 -370px;height:17px}
+.title-msg{background-position:0 -387px;margin-bottom:6px}
+.title-msg2{background-position:0 -387px;margin-bottom:2px}
+.title-ofertas{background-position:0 -422px;margin-bottom:6px}
+.title-bibliografia{background-position:0 -456px;height:32px;margin-bottom:9px}
+.title-rss{background-position:0 -489px;height:25px}
+.title-negocios{background-position:0 -516px;margin-bottom:9px;height:32px}
+.title-busca{background-position:0 -550px;margin-bottom:1px;height:32px}
+.title-blog{background-position:0 -583px;margin-bottom:6px}
+.title-news{margin-bottom:6px}
+.title-ajuste-news{margin-bottom:15px}
+.title-comentario{background-position:0 -617px;height:18px}
+/*Alterado Felipe*/
+.title-veja{background-position:0 -634px;height:23px}
+
+/*CONTEUDO-GERAL-CLASS-POST*/
+.post-img{float:left;}
+/*alterado-felipe*/
+.post-content{overflow:hidden}
+.post-content .destaque{font-weight:700}
+
+.post-content p span{color:#0f89df;}
+.post-content .saiba-mais{background:url(../img/saiba-mais.gif) no-repeat 0 0;color:#039;position:absolute;bottom:13px;display:block;line-height:18px;text-align:center;height:20px;width:94px}
+.post-content .buttom{ vertical-align:bottom; background-color:#CF0}
+
+/*ROTATIVO*/
+div.titRotativo {
+	float: left;
+}
+
+/*CONTEUDO-NOTICIA-LOGOFF*/
+.news-deslogada{float:left;width:490px}
+
+.sidebar-deslogada{float:left;width:251px;margin:0 0 20px 25px}
+.sidebar-deslogada .leia-mais{display:block;margin-bottom:10px}
+
+.main-title-parceiros{background-image:url(../img/title_nossos_parceiros.png);float:left; height:19px; width:750px; margin-top:30px;}
+.parceiros{background-image:url(../img/parceiros.jpg);clear:both;float:left;margin-top:10px;height:157px;width:750px}
+.parceiros a{display:block;padding:133px 0 0 14px}
+.parceiros span{float:left; height:53px; margin:13px 7px 0 6px;}
+.parceiros span a{padding:0;}
+
+/*LOGIN-OFF-HOME*/
+.news-deslogada .post,.veja-tambem .post{margin-bottom:20px}
+.news-deslogada .post,.news-deslogada .link-button,.sidebar-deslogada .post{padding-left:14px}
+.news-deslogada .post h2 a.ajusteHomeTitulos {font-weight: 700}
+.news-deslogada .post p {font-size: 12px}
+.pAjusteTamanho {font-size: 12px}
+.ajusteHomeTitulos {font-weight: 700;color:#003399}
+.news-deslogada .post .post-img img{border:3px solid #e6e6ef;margin-right:15px}
+
+/*LOGIN-OFF-SOBRE*/
+.sobre-portal img,.telefonica-negocios img{float:left;margin-right:10px}
+.perguntas-frequentes{clear:both;display:inline-block;margin-top:35px;width:100%;height: 100%;float: left;}
+.perguntas-frequentes ul li{background:url(../img/perguntas-frequentes-fechada.gif) no-repeat 0 5px;padding-left:12px;margin-bottom:15px}
+.perguntas-frequentes ul li.aberta{background:url(../img/perguntas-frequentes-aberta.gif) no-repeat 0 7px;}
+.perguntas-frequentes ul li h2{cursor:pointer;margin-bottom:5px}
+.perguntas-frequentes ul li p{display:none}
+
+/*LOGIN-OFF-FALE-CONOSCO*/
+#fale-conosco{margin:35px auto 0;width:512px}
+#fale-conosco label{margin-bottom:15px;position:relative}
+#fale-conosco input[type="text"],#fale-conosco select,#fale-conosco textarea{margin-left:15px}
+#fale-conosco input[type="text"]{width:385px}
+#fale-conosco .campo-txt{float:left;line-height:2.4em;text-align:right;width:105px}
+#fale-conosco .number{color:#999;font-weight:700;position:absolute;right:-34px;top:5px;width:25px;text-align:left}
+#content-all .caracter{top:35px}
+#fale-conosco input.ddd[type="text"]{width:53px}
+#fale-conosco input.tel[type="text"]{width:308px}
+#fale-conosco .estado-sigla{width:77px}
+#fale-conosco .estado-cidade{width:292px}
+#fale-conosco textarea{height:80px;width:385px}
+.obrigatorio,.falar-telefonica{color:#999;}
+#fale-conosco .obrigatorio{margin-left:120px}
+#content-all p.falar-telefonica{margin-top:35px;text-align:center}
+
+/*LOGIN-OFF-ESQUECEU-SENHA*/
+#esqueceu-senha{padding:20px 0}
+#esqueceu-senha fieldset{margin:0 25px}
+#esqueceu-senha label{float:left}
+#esqueceu-senha .senha{margin:0 10px;width:268px}
+#esqueceu-senha p{margin-top:15px}
+
+#premail{padding:20px 0}
+#premail fieldset{margin:0 25px}
+#premail label{float:left}
+#premail .senha{margin:0 10px;width:268px}
+#premail p{margin-top:15px}
+
+/*PERFIL EMPRESA*/
+h4.no-img{font-size:23px;color:#0F89DF;height:30px}
+#sidebar .perfil-empresa-menu{border:none;margin-top:10px}
+#sidebar .perfil-empresa-menu a{width:135px;text-align:center;font-weight:bold}
+#sidebar .perfil-empresa-menu .active a{background-image:url(../img/button-left-active.png);color:#9d9da9}
+#sidebar .perfil-empresa-menu .active .link-button{background-image:url(../img/button-right-active.png)}
+
+#perfil-empresa{background-color:#fff;border:1px solid #d4d814;display:inline-block;padding:18px;width:516px}
+#perfil-empresa #cadastro{width:auto;float:none}
+#perfil-empresa #cadastro img.documentacao{margin-left:0}
+#perfil-empresa #cadastro input[type="text"]{width:346px}
+#perfil-empresa #cadastro p.fale {padding:8px;border:1px solid #b2b2b2;color:#b2b2b2;font-weight:bold;width:160px;position:absolute;right:18px;text-align:center;line-height:18px;margin: 30px 0 0 0}
+#perfil-empresa #cadastro p.fale img{display:block;width:160px;height:105px;background:#b2b2b2;margin-bottom:10px}
+#perfil-empresa #cadastro p.fale a{color:#053894;text-transform:uppercase}
+
+#perfil-empresa #cadastro .empresa-destaque{margin-left:-18px;padding-left:18px;width:534px}
+#perfil-empresa #cadastro .campo-txt{width:130px}
+#perfil-empresa #cadastro .ddd[type="text"]{width: 55px}
+#perfil-empresa #cadastro .exibir{margin-left:5px;color:#999}
+#perfil-empresa #cadastro .file-info{line-height:18px;color:#969696}
+#perfil-empresa #cadastro .link-button{float:right}
+#perfil-empresa #cadastro .obrigatorio{margin-left:145px}
+#perfil-empresa #cadastro .tel[type="text"]{width: 279px;margin-left:5px}
+#perfil-empresa #cadastro span.empresa{color:#999}
+#perfil-empresa #cadastro a.senha{float:right;margin:5px 0 0 135px;font-size:11px;text-decoration:underline}
+
+#perfil-empresa #cadastro.preferencias p {margin-bottom:10px}
+#perfil-empresa #cadastro.preferencias label{width:169px;}
+#perfil-empresa #cadastro.adicionais input[type="text"],#perfil-empresa #cadastro.adicionais input[type="password"]{width:226px}
+#perfil-empresa #cadastro.adicionais input[type="password"]{float:left;margin-left:15px}
+#perfil-empresa #cadastro.adicionais select{width:230px}
+#perfil-empresa #cadastro.adicionais textarea{width:226px}
+#perfil-empresa #cadastro.adicionais .ddd[type="text"]{width: 55px}
+#perfil-empresa #cadastro.adicionais .link-button{margin-right:140px}
+#perfil-empresa #cadastro.adicionais .tel[type="text"]{width: 159px}
+
+.info-errada{border:1px solid #c5c5db;float:right;padding:5px;margin:130px 20px 0 0;text-align:center;width:190px}
+.info-errada img{margin-bottom:25px}
+.info-errada p{padding:0 10px}
+.info-errada a{color:#039;display:inline-block;font-size:15px;margin-bottom:10px}
+
+/*LOGIN-OFF-TELEFONICA-NEGOCIOS*/
+.telefonica-negocios,.sobre-telefonica{display:inline-block}
+.telefonica-negocios{margin-bottom:30px}
+.telefonica-negocios .player{border:1px solid #dcdce9;padding:10px;margin:60px auto;width:500px;}
+.telefonica-negocios .player p{text-align:center; }
+
+/*LOGIN-ON-HOME-NOTICIAS*/
+#noticias{background-color:#fff;border:1px solid #eee805;display:inline-block;padding:10px;margin-bottom:35px;height:282px}
+#noticias ul.navigation{border-top:1px solid #c4c4da;border-left:1px solid #c4c4da;border-right:1px solid #c4c4da;float:right;margin-left:10px;width:236px}
+#noticias ul.navigation li{border-bottom:1px solid #c4c4da;color:#039;cursor:pointer;padding:10px}
+#noticias ul.navigation li:hover{text-decoration:underline;}
+#noticias ul.navigation li.active{background-color:#0f89df;color:#fff}
+#noticias ul.navigation li.active a{color:#fff}
+.featuredbox{width:480px;height:282px;float:left;position:relative;overflow:hidden}
+.featuredbox ul.slides li{position:absolute;top:0;left:0;width:480px;height:190px}
+.featuredbox .description{
+	left: 0;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    z-index: 100;
+}
+.featuredbox .description .link-button {
+	bottom: -50px;
+    position: absolute;
+    right: 10px;
+}
+.featuredbox .description .link-button a {
+	font-size: 12px
+}
+.featuredbox .description a{font-size:15px;color:#039}
+.featuredbox .box-slide1,.featuredbox .box-slide2{position:absolute;top:0;left:0;z-index:-1}
+
+/*LOGIN-ON-HOME*/
+.veja-tambem,.dicas-vc{display:inline-block;}
+
+/*ACERTOS HOME LOGADA*/
+div#meus-favoritos div.linhaFav {
+	width: 561px
+}
+div#meus-favoritos div.linhaFav .saiba-mais {
+	background: url("../img/saiba-mais.gif") no-repeat scroll 0 0 transparent;
+	bottom: 13px;
+	color: #003399;
+	display: block;
+	height: 20px;
+	line-height: 18px;
+	float: right;
+	text-align: center;
+	width: 94px;
+}
+#sidebar div#bordaBannerFlash {
+	border: 1px solid #C4C4DA;
+	padding: 4px
+}
+#meus-favoritos li.clearMarginRight{margin-right: 30px}
+
+/*LOGIN-ON-HOME-VEJA-TB*/
+.veja-tambem{margin:0 15px 45px 0;float:left;width:240px}
+.veja-tambem .post .data{color:#0f89df}
+.veja-tambem .post-img{margin-right:10px}
+.pesquisa-premiada{margin-top:15px}
+/*LOGIN-ON-HOME-VEJA-TB*/
+.ponto-negocios .post,.t-vantagens .post{color:#039;margin-bottom:10px}
+.ponto-negocios .post{background:url(../img/ponto-negocios.jpg) no-repeat right bottom #fff;border:1px solid #c4c4da;padding:10px;width: 218px;float: left;height: 69px;margin-bottom: 17px}
+.ponto-negocios .post-img img{border:1px solid #c4c4da}
+/*LOGIN-ON-HOME-VEJA-TB*/
+.t-vantagens .post{background:url(../img/t-vantagens.jpg) no-repeat 0 0 #fff;padding:15px;height:67px}
+
+/*LOGIN-ON-HOME-DICAS-VC*/
+.dicas{color:#039;float:left;width:750px}
+.dicas .post{border-bottom:1px solid #e6e6ef;float:left;padding-right:50px;margin-bottom:20px;height:200px;width:200px}
+.dicas .post img{border:5px solid #e6e6ef;}
+
+.dicas-leitura{float:right}
+#content .dicas-leitura h3{background-color:#fff;color:#0f89df;padding:0}
+.dicas-leitura .post{height:165px;width:240px}
+.dicas-leitura .post-img{margin-right:15px}
+
+#meus-favoritos{border:1px solid #eee805;display:inline-block;padding:20px}
+#meus-favoritos.favoritosLogado{width: 708px}
+#meus-favoritos ul.favoritos{display:inline-block;margin-bottom:30px}
+#meus-favoritos li{float:left;margin-right:40px;width:147px}
+#meus-favoritos li a{background:url(../img/fav-seta.gif) no-repeat 0 3px;color:#039;display:block;padding-left:10px}
+
+/*LOGIN-ON-T-VANTAGENS*/
+#t-vantagens-negocios h2{ width:670px;}
+#t-vantagens-negocios h2 span{color:#0f89df;}
+#t-vantagens-negocios p.ofertas{margin:5px 0 20px}
+#t-vantagens-negocios .post{background:url(../img/t-vantagens-negocios.gif) no-repeat 0 0;float:left;position:relative;margin:0 20px 15px 0;height:96px;width:344px}
+#t-vantagens-negocios .post-img{width:180px;margin-top: 11px}
+#t-vantagens-negocios .post-content p{margin-bottom:10px}
+#t-vantagens-negocios .sugestoes{background:url(../img/t-vantagens-degrade.png) no-repeat center bottom;border:1px solid #c4c4da;display:inline-block;margin:25px 0 0 155px;padding:15px 55px;width:340px}
+#t-vantagens-negocios .post-content p span.tipoA{font: 12px Myriad Pro;color:#003399}
+#t-vantagens-negocios .post-content p span.tipob{font: 16px Myriad Pro}
+#t-vantagens-negocios .post-content p span.tipoDestaque{color: #0f89df}
+
+/*LOGIN-ON-T-VANTAGENS+NOSSOS-PARCEIROS*/
+#t-vantagens-negocios .post,#nossos-parceiros .post{padding:10px}
+#t-vantagens-negocios .post-img a,#nossos-parceiros .post-img a{display:block;text-align:center}
+#t-vantagens-negocios .post-content,#nossos-parceiros .post-content{color:#039}
+
+/*LOGIN-ON-NOSSOS-PARCEIROS*/
+#nossos-parceiros .post{background:url(../img/nossos-parceiros.gif) no-repeat 0 0;float:left;margin:0 18px 15px 0;height:222px;width:293px}
+#nossos-parceiros .post-img{width:150px}
+#nossos-parceiros .post-content h2{color:#0f89df;}
+#nossos-parceiros .post-content p{margin-bottom:10px}
+#nossos-parceiros .post-txt{float:left;margin:15px 0 0 0}
+#nossos-parceiros .sugestoes{background:url(../img/nossos-parceiros-sugestoes.gif) no-repeat 0 0;display:inline-block;font-size:15px;margin:0 0 0 233px;padding:30px 22px;height:36px;width:490px}
+
+/*LOGIN-ON-FAVORITOS*/
+#favoritos{background-color:#fff;border:1px solid #d4d814;display:inline-block;padding:0 18px 18px}
+#favoritos.favoritos3Col{width: 517px}
+#favoritos .post .data-post{color:#0f89df;margin-bottom:0}
+#favoritos ul.post-information{display:inline-block}
+#favoritos ul.post-information li,#favoritos ul.post-information li span{margin-right:5px;float:left}
+#favoritos ul.post-information li span,#favoritos ul.post-information li a{display:inline-block;margin-top:10px}
+.avatar{border:1px solid #c4c4da}
+#favoritos .post-img{margin:0 10px 10px 0}
+#favoritos .post{background:url(../img/post-bg.gif) repeat-x 0 bottom;margin:20px 0}
+#favoritos .post p{margin-bottom:15px;font-size: 12px}
+#favoritos .post ul{margin: 20px 0}
+#favoritos .post ul.curtir{margin: 0}
+#favoritos .post ul li{font-size: 12px;list-style: disc;margin-left: 15px}
+#favoritos .podcasts{background:url(../img/filtros.gif) no-repeat 0 -15px;color:#039;display:block;line-height:1.9em;padding-left:25px;margin-top:10px;height:20px}
+#favoritos .post h2{margin-bottom:10px;color:#0F89DF;font-weight: bold}
+/*Alterado ANA */
+#favoritos .post-info{padding:10px;margin-top:10px;height:29px}
+#favoritos .post-info .link-button,#favoritos .post-info .link-button{padding:0 6px 0 18px}
+#favoritos .post-info .remover{border-left:1px solid #fff;display:inline-block;padding-left:13px;margin-left:13px;height:25px}
+
+#favoritos .post-info .compartilhe li{float:left}
+#favoritos .post-info .comment{line-height:2.6em; color:#003399}
+#favoritos .post-info .comment-blog{line-height:3.2em}
+#favoritos .post-info .link-button{float:right;}
+
+
+/*LOGIN-ON-MINHAS-MENSAGENS*/
+#mensagens{background-color:#fff;border:1px solid #d4d814;padding:15px;height: 100%;float: left;}
+#mensagens h2{float:left;margin-bottom:20px}
+#mensagens h2 a.inativo{color:#999}
+#mensagens h2 a.ativo{color:#039}
+#mensagens h2.enviadas{font-weight:bold;}
+#mensagens h2.recebidas{font-weight:bold;margin-right:45px}
+#mensagens .msg-content{overflow:hidden}
+#mensagens .msg{border-bottom:1px solid #999;display:inline-block;padding-bottom:20px;margin-top:20px;width: 100%}
+#mensagens .empresa-logo{border:1px solid #999;display:table;float:left;margin-right:15px;height:100px;width:102px; }
+#mensagens ul.msg-info{margin-bottom:10px}
+#mensagens .nome-empresa{color:#1e90e1;float:left}
+#mensagens .data-msg{color:#999}
+#mensagens .msg-func{margin-top:10px}
+#mensagens .msg-func li a{background:url(../img/icones.jpg) no-repeat 0 -65px;display:block;float:left;padding-left:26px;height:18px; text-decoration:underline}
+#mensagens .msg-func li.excluir a{background-position:0 -83px;color:#999;float:right;padding-left:17px}
+
+/*LOGIN-ON-OFERTAS-TELEFONICA*/
+.oferta{background:url(../img/ofertas-telefonica.gif) no-repeat 0 0;padding:15px;margin-top:15px;height:156px;width:480px}
+.oferta-img{float:left;margin-right:15px}
+.oferta-img .centralizar{border:1px solid #0f89df;height:95px;width:115px}
+.oferta-img .link-button{margin-top:10px}
+.oferta-img .link-button a{padding:0 21px 0 29px}
+.oferta-content{overflow:hidden}
+.oferta-content h3{font-weight:700}
+.oferta-content .valor{margin-top:26px}
+.oferta-content .valor span{background:url(../img/icones.jpg) no-repeat -12px -98px;color:#0F89DF;font-size:15px;font-weight:700;padding-left:14px;margin-left:10px}
+
+/*LOGIN-ON-LEITURA-SUGERIDA*/
+.livro{
+	background:url(../img/bg-libros-top.gif) no-repeat 0 0;
+	display:inline-block;
+	margin-top:15px;
+	width:460px;
+	width: 508px
+}
+.livroBt {
+	background: url(../img/bg-libros-footer.gif) bottom no-repeat;
+	float: left;
+	width: 508px
+}
+.livro .contentLiv {
+	border-left: solid 1px #d2d2e3;
+	border-right: solid 1px #d2d2e3;
+	width: 456px;
+	float: left;
+	margin: 11px 0;
+	padding: 14px 25px;
+}
+.contentLiv
+.livro ul.compartilhe,.livro ul.curtir{margin-top:31px}
+.bibliografia-img{float:left;margin-right:15px}
+.bibliografia-content{overflow:hidden}
+.bibliografia-content h2{margin-bottom:5px}
+
+/*LOGIN-ON-COMPARTILHE*/
+.compartilhe{float:right}
+#favoritos .post ul.compartilhe{margin: 0 0 0 10px}
+.compartilhe li{float:left;margin:2px 5px 0 10px}
+.compartilhe li a{background:url(../img/icones.jpg) no-repeat 0 0;height:24px;width:24px}
+.compartilhe li a.twitter{background-position:0 -24px}
+#favoritos .post ul.compartilhe li{list-style: none;margin-left: 0}
+
+/*LOGIN-ON-CURTIR-NAO-CURTIR*/
+ul.curtir{float:right}
+ul.curtir li{float:left}
+ul.curtir li a{background:url(../img/gostei-nao-gostei.png) no-repeat 0 0;color:#039;display:block;height:29px;width:62px}
+ul.curtir li.gostei a{padding:6px 0 0 13px}
+ul.curtir li.nao-gostei a{background-position:-75px 0;width:29px}
+#favoritos .post ul.curtir li{list-style: none;margin-left: 0}
+
+/*LOGIN-ON-PAGINACAO*/
+.pagination{margin:0 auto;text-align: center}
+div.paginacao{display:inline-block;list-style:none;margin:20px 0 5px 0;}
+div.paginacao span{float:left;}
+div.paginacao span,ol.paginacao span a{padding:10px}
+div.paginacao span.current{background-color:#e7e9ea}
+div.paginacao span a{color:#333}
+div.paginacao span a:hover{background-color:#d4d814}
+
+/*LOGIN-ON-BUSCA-POR-LETRA*/
+div.listaletras {width:478px;border:1px solid #999;padding:15px;margin-bottom:10px;text-align: center;}
+ol.por-letra{display:inline-block;list-style:none;}
+ol.por-letra li{float:left}
+ol.por-letra li a{color:#039;}
+.mais-recentes{display:block;margin:10px 0}
+
+/*LOGIN-ON-RSS*/
+#content-all .rss{float:left;margin-right:10px}
+#content-middle h2{margin-bottom:15px}
+.saiba-usar{padding-right:15px;position:relative}
+.saiba-usar h3{color:#039;font-size:15px;font-weight:400;line-height:2em;height:34px}
+.saiba-usar .ordem-list{background:url(../img/icones.jpg) no-repeat 0 -115px;float:left;padding:8px 0 0 12px;margin-right:17px;height:26px;width:20px}
+.saiba-usar p{margin-left:50px}
+.rssP{font: 9pt arial}
+.rssPpx{font: 12px arial}
+
+.nossos-canais h3{background-color:#039;color:#fff;padding:2px 0 2px 15px;margin-bottom:5px}
+.nossos-canais ul.feed{display:inline-block;margin-bottom:15px}
+/*alterado-felipe*/
+.nossos-canais ul.feed li{background:url(../img/icones.jpg) no-repeat 0 -148px;float:left;margin:0 0 8px 0;width: 146px}
+.nossos-canais ul.feed li a{display:block;padding-left:31px;line-height:2em;height:22px}
+
+/*LOGIN-ON-PONTO-NEGOCIOS*/
+.oportunidades{margin-top:15px; font-weight:bold}
+
+.p-negocios{margin:18px 0 10px}
+.livro .post-img img{padding:5px}
+.livro .post-content .data-msg{margin-bottom:10px}
+.livro .post-content h2,.livro .post-content h3,.livro .post-content a{color:#0f89df;font-weight:bold}
+.perfil-empresa{color:#0f89df;display:block;margin:5px 0 10px;text-decoration:underline}
+.falar{background:url(../img/icones.jpg) no-repeat 0 -170px;display:block;padding-left:23px; color:#0f89df}
+
+/*LOGIN-ON-BUSCA*/
+.msg h4{color:#1e90e1;margin-bottom:5px;font-weight:700}
+
+/*LOGIN-ON-BLOG*/
+#comment-post{margin-top:40px}
+#comment-post form{display:inline-block;margin-top:10px;width: 713px}
+#comment-post textarea{height:85px;width:708px}
+#comment-post .link-button{float:right;margin-top:10px}
+/*Alterado ANA*/
+#comment-post h5{font-weight:bold}
+
+ol.commentlist{list-style:none;margin-bottom:25px}
+ol.commentlist li{background:url(../img/comment-top.gif) no-repeat -1px top;padding-top:14px;margin-top:10px}
+ol.commentlist li .border-bottom{background:url(../img/comment-bottom.gif) no-repeat -1px bottom;display:block}
+ol.commentlist li .comment-content{border-left:1px solid #d2d2e3;border-right:1px solid #d2d2e3;padding:1px 15px 15px;width: 680px}
+ol.commentlist li .comment-content p{margin-left:50px}
+.comment-content .abuso{text-decoration:underline}
+.comment-content .comment-author{border-bottom:2px solid #e4e4ee}
+.comment-content .comment-author .avatar{margin-right:10px;float:left}
+.comment-content .comment-author .espaco-top{margin-top:25px;display:inline-block}
+ol.commentlist li p{margin-top:10px}
+
+#veja-tb{margin-top:20px}
+#veja-tb dl{float:left;margin-right:37px;width:150px}
+#veja-tb dt{color:#1e90e1}
+#veja-tb dd.sub{color:#039}
+
+/*LOGIN-ON-PERFIL*/
+#perfil{padding:15px}
+#perfil .post-img{margin-right:15px}
+#perfil .post-content p{margin-bottom:10px}
+
+#form-perfil label textarea{height:90px;width:578px}
+#form-perfil .link-button{float:right;margin-top:10px}
+
+/*SIDEBAR*/
+#sidebar{float:left;position:relative;width:190px}
+#sidebar > div,#sidebar > form,#sidebar > ul{border:1px solid #c4c4da;margin-bottom:20px;padding:10px}
+#sidebar form#filtros {margin-top: 41px}
+#sidebar div.categorias form#filtros {margin-top: 0px}
+#sidebar > img{border:1px solid #c4c4da;margin-bottom:20px;padding:4px}
+#sidebar label,#sidebar .filtros-title{background-color:#d4d814;padding:5px;font-weight:700;width:158px}
+#sidebar .filtros-title{border:none;margin:0}
+
+/*SIDEBAR-ENQUETE*/
+#enquete{background:url(../img/enquente.png) no-repeat center bottom;}
+#enquete p{margin-top:10px}
+#enquete p input{margin-right:5px}
+#enquete span{margin-top:20px}
+
+/*SIDEBAR-RSS*/
+#rss{background:url(../img/rss.png) no-repeat center bottom}
+#rss a{display:block;padding-left:25px;font-weight:700}
+#rss a.assine{background:url(../img/icones.jpg) no-repeat 0 -48px;color:#039}
+
+/*SIDEBAR-FILTROS*/
+.categorias{margin-top:33px}
+#sidebar.sideNot .categorias{margin-top:42px}
+#sidebar.pontoNeg .categorias{margin-top:42px}
+.categorias .filtros{margin-bottom:20px}
+
+#filtros p{margin:10px 0}
+#filtros p{background:url(../img/filtros.gif) no-repeat 22px 0;color:#333;display:block;height:15px}
+#filtros p.podcasts{background-position:22px -15px;height:20px}
+#filtros p.videos{background-position:22px -35px;height:17px}
+#filtros p.livros{background-position:22px -100px}
+#filtros p input{margin-right:40px}
+
+/*SIDEBAR-FILTROS-CATEGORIAS*/
+#filtros label,#categorias label{margin-bottom:5px}
+#filtros p,#categorias p{margin-bottom:10px;color: #0F89DF}
+#categorias input{margin-right:10px}
+#categorias p a.contentX {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    font: bold 10px arial;
+    padding: 1px 3px;
+    color: #bc2727
+}
+
+/*SIDEBAR-FAVORITOS*/
+ul.favs{margin-bottom:10px}
+ul.favs li{border-bottom:1px solid #999;padding:10px 5px}
+
+/*SIDEBAR-NOSSOS-PARCEIROS*/
+.nossos-parceiros li{margin:20px 0}
+.nossos-parceiros li a{display:block;text-align:center}
+
+/*SIDEBAR-PONTO-NEGOCIOS*/
+ul.filtros-negocios li{margin:10px 0 10px 5px}
+
+/*MODAL*/
+.fecharModal {
+	background: url("../img/fechar.png") no-repeat;
+	width: 26px;
+	height: 26px;
+	text-indent: -9999px;
+	cursor: pointer;
+	position: absolute;
+	right: -12px;
+	top: -12px
+}
+.acertoPrelabel{padding-top: 3px}
+#mask {position:absolute;
+z-index:9000;
+background-color:#000;
+display:block;
+}
+
+#boxes .window {
+position:absolute;
+width:440px;
+background:#fff;
+height:200px;
+display:block;
+z-index:9999;
+padding:20px;
+}
+
+div#hidefrm div.msg1faleconosco {
+	width: 490px
+}
+
+div#titleModal {
+	background: #003399;
+	text-align: center
+}
+div#titleModal h3 {
+	font: bold 15px arial;
+	color: #fff
+}
+
+/*Validacao Form*/
+input.valido {border: solid 1px blue}
+input.invalid {border: solid 2px red}
+select.invalid {border: solid 2px red}
+checkbox.invalid {border: solid 2px red}
+textarea.valido {border: solid 1px blue}
+textarea.invalid {border: solid 2px red}
+#messageBox2 { display: none; color: red }
+
+
+/* Personalize a janela modal aqui. Você pode adicionar uma imagem de fundo. */
+#boxes #dialog {
+width:375px;
+height:203px;
+
+}
+/* posiciona o link para fechar a janela */
+.close {
+display:block;
+text-align:right;
+}
+
+/*PAGINA DE AVISO PARA LOGAR QUANDO FOR RESTRITO*/
+.logarOuCadastro {
+    padding: 40px 0 60px;
+    text-align: left;
+    width: 985px;
+}
+.logarOuCadastro p.mensagemNaoLogado {
+    color: #003399;
+    font: 18px "Arial",Tahoma,Verdana;
+    margin-bottom: 20px;
+}
+.logarOuCadastro p.mensagemNaoLogado {
+    color: #003399;
+    font: 18px "Arial",Tahoma,Verdana;
+    margin-bottom: 20px;
+}
+.logarOuCadastro p.mensagemNaoLogado2 {
+    color: #003399;
+    font: 14px "Arial",Tahoma,Verdana;
+    margin-bottom: 20px;
+}
+
+/*RODAPE*/
+#footer{background:url(../img/footer.gif) repeat-x 0 0;clear:both;height:80px}
+.footer-content{margin:0 auto;padding-top:18px;width:476px}
+.footer-content li{float:left}
+.footer-content li span{padding:0 11px}
+.footer-content li a{color:#039}
+
+/*MODS*/
+.mb15 {margin-bottom: 15px}
+
+/*ERROS*/
+#erro-geral{background:url(../img/pagina-nao-encontrada.gif) no-repeat 0 0;padding-top:121px;margin:150px auto 0;width:460px;}
+#erro-geral p,#erro-geral a{color:#999}
+#erro-geral .p-404,#erro-geral a{color:#999;font-size:15px}
+#erro-geral p,#erro-geral .plataforma{margin-left:187px}
+#erro-geral p{margin-bottom:5px}

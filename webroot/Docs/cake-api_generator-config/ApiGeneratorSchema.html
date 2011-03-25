@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class ApiGeneratorSchema</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class ApiGeneratorSchema</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+													</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">ApiGenerator Plugin Schema</p>
+		<p class="notes">
+			Located in <a class="field" href="_plugins---api_generator---config---schema---api_generator.php.html">/plugins/api_generator/config/schema/api_generator.php</a> (line <span class="field">27</span>)
+		</p>
+		
+				
+		<pre>CakeSchema
+   |
+   --ApiGeneratorSchema</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$api_classes" title="details" class="var-name">$api_classes</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array_change_key_case</span>
+					<a href="#$api_packages" title="details" class="var-name">$api_packages</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<span class="disabled">Vars</span>
+						
+			
+								</div>
+		<div class="info-box-body">
+			<a name="var$api_classes" id="$api_classes"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$api_classes</span>
+			 = <span class="var-default">array(<br />		'id' =&gt; array('type' =&gt; 'string', 'default' =&gt; NULL, 'length' =&gt; 36, 'null' =&gt; false, 'key' =&gt; 'primary'),'api_package_id'=&gt;array('type'=&gt;'string','default'=&gt;NULL,'length'=&gt;36,'null'=&gt;true,'key'=&gt;'index'),'name'=&gt;array('type'=&gt;'string','length'=&gt;200,'null'=&gt;false),'slug'=&gt;array('type'=&gt;'string','length'=&gt;200,'null'=&gt;false),'file_name'=&gt;array('type'=&gt;'text'),'method_index'=&gt;array('type'=&gt;'text'),'property_index'=&gt;array('type'=&gt;'text'),'flags'=&gt;array('type'=&gt;'integer','default'=&gt;0,'length'=&gt;5),'coverage_cache'=&gt;array('type'=&gt;'float','length'=&gt;'4,4'),'created'=&gt;array('type'=&gt;'datetime'),'modified'=&gt;array('type'=&gt;'datetime'),'indexes'=&gt;array('PRIMARY'=&gt;array('column'=&gt;'id','unique'=&gt;true),'api_package_id'=&gt;array('column'=&gt;'api_package_id','unique'=&gt;false),))</span>			(line <span class="line-number">33</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">api_classes table definition.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$api_packages" id="$api_packages"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array_change_key_case</span>
+			<span class="var-name">$api_packages</span>
+			 = <span class="var-default">array(<br />		'id' =&gt; array('type' =&gt; 'string', 'default' =&gt; NULL, 'length' =&gt; 36, 'null' =&gt; false, 'key' =&gt; 'primary'),'parent_id'=&gt;array('type'=&gt;'string','default'=&gt;NULL,'length'=&gt;36,'null'=&gt;true,'key'=&gt;'index'),'name'=&gt;array('type'=&gt;'string','length'=&gt;255,'null'=&gt;false),'slug'=&gt;array('type'=&gt;'string','length'=&gt;255,'null'=&gt;false),'lft'=&gt;array('type'=&gt;'integer'),'rght'=&gt;array('type'=&gt;'integer'),'created'=&gt;array('type'=&gt;'datetime'),'modified'=&gt;array('type'=&gt;'datetime'),'indexes'=&gt;array('PRIMARY'=&gt;array('column'=&gt;'id','unique'=&gt;true),'parent_id'=&gt;array('column'=&gt;'parent_id','unique'=&gt;false),))</span>			(line <span class="line-number">55</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">api_packages table definition</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 18 Mar 2011 01:05:26 -0300 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

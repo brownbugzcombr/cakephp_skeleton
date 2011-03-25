@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class DocblockTools</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class DocblockTools</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">DocblockTools - Contains helper methods for Documentator classes</p>
+<p class="description"><p>PHP 5.2+</p><p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)  Copyright 2008-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)</p><p>Licensed under The MIT License  Redistributions of files must retain the above copyright notice.</p></p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright 2008-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)</li>
+				<li><span class="field">link:</span> <a href="http://cakephp.org">http://cakephp.org</a></li>
+				<li><span class="field">since:</span> ApiGenerator 0.1</li>
+				<li><span class="field">license:</span> MIT</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_plugins---api_generator---libs---docblock_tools.php.html">/plugins/api_generator/libs/docblock_tools.php</a> (line <span class="field">20</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#makeFunctionSignature" title="details" class="method-name">makeFunctionSignature</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$func</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">array</span>
+										<a href="#parseDocBlock" title="details" class="method-name">parseDocBlock</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$comments</span>)
+									</div>
+								
+																				</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodmakeFunctionSignature" id="makeFunctionSignature"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method makeFunctionSignature</span> (line <span class="line-number">105</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create a string representation of the method signature.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			makeFunctionSignature
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$func</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">ReflectionFunctionAbstract</span>
+				<span class="var-name">$func</span><span class="var-description">: The function you want a signature for.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodparseDocBlock" id="parseDocBlock"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method parseDocBlock</span> (line <span class="line-number">35</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">parseDocBlock</p>
+<p class="description"><p>Cleans input comments of stars and /'s so it is more readable.  Creates a multi dimensional array. That contains semi parsed comments</p><p>Returns an array with the following  'title' contains the title / first line of the doc-block  'desc' contains the remainder of the doc block  'tags' contains all the doc-blocks @tags.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array of Filtered and separated comments</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">array</span>
+		<span class="method-name">
+			parseDocBlock
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$comments</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$comments</span><span class="var-description">: The comment block to be cleaned</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 18 Mar 2011 01:05:36 -0300 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

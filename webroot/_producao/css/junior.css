@@ -1,0 +1,34 @@
+/*PERFIL EMPRESA*/
+h4.no-img{font-size:23px;color:#0F89DF;height:30px}
+#sidebar .perfil-empresa-menu{border:none;margin-top:10px}
+#sidebar .perfil-empresa-menu a{width:135px;text-align:center;font-weight:bold}
+#sidebar .perfil-empresa-menu .active a{background-image:url(../img-interface/button-left-active.png);color:#9d9da9}
+#sidebar .perfil-empresa-menu .active .link-button{background-image:url(../img-interface/button-right-active.png)}
+
+#perfil-empresa{background-color:#fff;border:1px solid #d4d814;display:inline-block;padding:18px}
+#perfil-empresa #cadastro{width:auto;float:none}
+#perfil-empresa #cadastro img.documentacao{margin-left:0}
+#perfil-empresa #cadastro input[type="text"]{width:346px}
+#perfil-empresa #cadastro p.fale {padding:8px;border:1px solid #b2b2b2;color:#b2b2b2;font-weight:bold;width:160px;position:absolute;right:18px;text-align:center;line-height:18px}
+#perfil-empresa #cadastro p.fale img{display:block;width:160px;height:105px;background:#b2b2b2;margin-bottom:10px}
+#perfil-empresa #cadastro p.fale a{color:#053894;text-transform:uppercase}
+
+#perfil-empresa #cadastro .campo-txt{width:130px}
+#perfil-empresa #cadastro .ddd[type="text"]{width: 55px}
+#perfil-empresa #cadastro .exibir{margin-left:5px;color:#999}
+#perfil-empresa #cadastro .file-info{line-height:18px;color:#969696}
+#perfil-empresa #cadastro .link-button{float:right}
+#perfil-empresa #cadastro .obrigatorio{margin-left:145px}
+#perfil-empresa #cadastro .tel[type="text"]{width: 279px;margin-left:5px}
+#perfil-empresa #cadastro span.empresa{color:#999}
+#perfil-empresa #cadastro a.senha{float:right;margin:5px 0 0 135px;font-size:11px;text-decoration:underline}
+
+#perfil-empresa #cadastro.preferencias p {margin-bottom:10px}
+#perfil-empresa #cadastro.preferencias label{width:169px;}
+#perfil-empresa #cadastro.adicionais input[type="text"],#perfil-empresa #cadastro.adicionais input[type="password"]{width:226px}
+#perfil-empresa #cadastro.adicionais input[type="password"]{float:left;margin-left:15px}
+#perfil-empresa #cadastro.adicionais select{width:230px}
+#perfil-empresa #cadastro.adicionais textarea{width:226px}
+#perfil-empresa #cadastro.adicionais .ddd[type="text"]{width: 55px}
+#perfil-empresa #cadastro.adicionais .link-button{margin-right:140px}
+#perfil-empresa #cadastro.adicionais .tel[type="text"]{width: 159px}

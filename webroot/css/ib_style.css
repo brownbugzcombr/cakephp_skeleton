@@ -1,0 +1,44 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+h1,h2,h3,h4,h5,a,p,div,span{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+}
+h1{
+	font-size:16px;
+	font-weight:bold;
+	margin:20px 0;
+}
+.ib_img_box{
+	background-color:#EAEAEA;
+	padding:5px;
+	margin-bottom:20px;
+}
+.fill_grid{
+	width:620px;
+};
+.align_center{
+	text-align:center;
+}
+.ib_image_title{
+	color:#F30;
+	font-weight:bolder;
+	font-size:80%;
+}
+.ib_image_author{
+	color:#036;
+	font-weight:normal;
+	font-size:80%;
+}
+
+.pagination{background:#fff;color:#000;margin:20px 0;}
+.pagination .pg_btn_num{width:30px;float:left;text-align:center;background:#fff;}
+.pagination .pg_btn_num a{background:#CCC;text-decoration:none;color:#036;font-size:10px;text-align:center;padding:0px 5px;}
+.pagination .pg_btn_num a:hover{background:#efefef;text-decoration:none;color:#036;font-size:10px;text-align:center;padding:0px 5px;}
+.pagination .pg_btn_nav{width:30px;float:left;text-align:center;background:#fff;}
+.pagination .pg_btn_nav a{background:#fff;text-decoration:none;color:#036;font-size:10px;text-align:center;padding:0px 0px;}
+.pagination .pg_btn_nav a:hover{background:#fff;text-decoration:none;color:#000;font-size:10px;text-align:center;padding:0px 0px;}
+

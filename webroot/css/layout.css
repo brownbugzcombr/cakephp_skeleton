@@ -1,0 +1,145 @@
+/* 
+    Document   : layout.css
+    Created on : 11/03/2011, 01:35:44
+    Author     : Greg
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*RESET*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,input,textarea,button,select,option,optgroup,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0}
+
+/*GERAL*/
+body,input,textarea,select,button{color:#333;font:11px/16px "Arial",Tahoma,Verdana}
+code,kbd,pre,samp,tt{font-family:"andale mono",consolas,monaco,"lucida console","courier new",courier,monospace}
+
+/*UTEIS*/
+.left{float:left}
+.right{float:right}
+.center{text-align:center}
+.clear{clear:both}
+.inline-block{display:inline-block}
+.first-margin{margin-left:0 !important}
+.last-margin{margin-right:0 !important}
+.top-margin{margin-top:0 !important}
+.bottom-margin{margin-bottom:0 !important}
+.first-padding{padding-left:0 !important}
+.last-padding{padding-right:0 !important}
+.top-padding{padding-top:0 !important}
+.bottom-padding{padding-bottom:0 !important}
+.hidden,.print{display:none}
+.graphic{display:block;overflow:hidden;text-indent:-9999px}
+.centralizar{display:table-cell;vertical-align:middle;text-align:center}
+.mb20{margin-bottom: 20px}
+.pbt13{padding: 13px 0}
+.pointer{cursor: pointer}
+.bold{font-weight:bold;}
+.pl10{padding-left:10px;}
+.pr10{padding-right:10px;}
+.pl5{padding-left:5px;}
+.pr5{padding-right:5px;}
+.ml10{margin-left:10px;}
+.mr10{margin-right:10px;}
+.ml5{margin-left:5px;}
+.mr5{margin-right:5px;}
+/*TIPOGRAFIA*/
+h1,h2,h3,h4,h5,h6{color:#039;line-height:1.3em;font-size:15px;font-weight:400}
+em,i,optgroup{font-style:italic}
+strong,b{font-weight:700}
+blockquote,q,cite{font-style:italic}
+blockquote:before,blockquote:after,q:before,q:after{content:""}
+blockquote,q{quotes:"" ""}
+pre{white-space:pre}
+abbr,acronym,dfn{border-bottom:1px dotted;cursor:help}
+var{font-style:400px}
+center{text-align:center}
+
+/*CABECALHO*/
+#header{position:relative;height:100px;background:url(../img/footer.gif) repeat-x 0 0;clear:both;height:120px}
+#header h1 a{background:url(../img/telefonica-negocios.gif) no-repeat 0 0;height:100px;width:100px}
+#header h1,#header h2.nosso-negocio{float:left}
+#header h2.nosso-negocio{background:url(../img/telefonica-negocios.gif) no-repeat 0 -100px;margin:8px 0 0 48px;height:83px;width:274px}
+#header h2.telefonica-negocios{float:right;margin-top:24px;height:22px;width:71px}
+
+/*LOGIN-OFF-CADASTRE-SE*/
+#login-off{position:relative;padding:17px 0 17px 15px}
+.cadastre-se{float:left;margin-left:125px;width:278px}
+.cadastre-se p{color:#039;font-size:15px;margin-bottom:5px}
+
+/*LOGIN-OFF-LOGIN*/
+#login{display:inline-block;margin-left:50px}
+#login label{float:left;font-size:12px;font-weight:700;margin-right:23px}
+#login label span{float:right;font-size:10px;font-weight:400}
+#login input[type="text"],#login input[type="password"]{display:block}
+#login .link-button{margin-top:15px;}
+
+
+/*RODAPE*/
+#footer{background:url(../img/footer.gif) repeat-x 0 0;clear:both;height:80px}
+.footer-content{margin:0;padding-top:18px;width:476px;}
+.footer-content li{float:left}
+.footer-content li span{padding:0 11px}
+.footer-content li a{color:#444;text-decoration: none;}
+.footer-content li a:hover{color:#222;text-decoration: underline}
+
+/*LISTAS*/
+ul{list-style:none}
+ol{list-style:decimal}
+dt{font-weight:700}
+dd{margin-bottom:1em}
+
+/*Login form*/
+.loginBox{
+    width:200px;
+    border:1px solid black;
+    height:80px;
+    background:#efefef;
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+    /* Firefox */
+    -moz-border-radius: 5px;
+    /* WebKit */
+    -webkit-border-radius: 5px;
+    /* IE9, Opera 10.5+, dev channel releases of Google Chrome */
+    border-radius: 5px;
+}
+
+.loginBox fieldset{
+    border:0px;
+    padding:5px;
+}
+.loginBox label{
+    color:#333;
+}
+.loginBox a{
+    color:#633;
+}
+.loginBox a:hover{
+    color:#933;
+}
+.loginBox .ok-button{
+    background: url(../img/ok.gif) no-repeat;
+    width:22px;
+    height:22px;
+    float:right;
+}
+.loginBox .loginName{
+    font-size: 12px;
+    font-weight: bolder;
+    color:#2AA7DE;
+}
+.loginBox span{
+    font-size: 10px;
+    font-weight: bolder;
+    color:#2AA7DE;
+}
+.loginBox .pontosNum{
+    font-size: 10px;
+    font-weight: bolder;
+    color:crimson;
+}
